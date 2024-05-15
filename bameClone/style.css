@@ -593,6 +593,7 @@
     border: 20px solid var(--black-color3);
     border-radius: 0;
     position: relative;
+    max-width: 450px;
 }
 
 .card__two_img {
