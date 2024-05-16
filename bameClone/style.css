@@ -31,7 +31,9 @@
     --ripple-ani-duration: 5s;
     --th-body-background: #0B0E13;
 }
-
+.swiper-wrapper {
+    display: none;
+}
 .container {
     max-width: 1280px;
     margin: 0 auto;
@@ -307,9 +309,7 @@
     background-position: top;
     background-repeat: no-repeat;
     background-size: cover;
-
     position: relative;
-    
 }
 .hero__heading {
     font-size: 64px;
@@ -319,7 +319,7 @@
     font-family: var(--title-font);
 }
 .text__section {
-    max-width: 800px;
+    max-width: 900px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -389,7 +389,25 @@
 .hero__thumb1 {
     position: absolute;
     bottom: 0;
-    left: 0;
+    left: -50px;
+}
+.responsive__device_laptop {
+    position: absolute;
+    bottom: 0;
+    left: 65px;
+    z-index: 99;
+}
+.responsive__device__tab {
+    position: absolute;
+    bottom: 0;
+    right: 200px;
+    z-index: 99;
+}
+.responsive__device_mobile {
+    position: absolute;
+    bottom: 0;
+    right: 150px;
+    z-index: 99;
 }
 .hero__thumb2 {
     position: absolute;
@@ -398,7 +416,7 @@
 }
 
 .hero__thumb1 img , .hero__thumb2 img {
-    width: 300px;
+    width: 280px;
 }
 
 .single__button {
@@ -557,6 +575,19 @@
     font-family: var(--title-font);
     font-weight: 600;
 }
+.responsive__device {
+    position: relative;
+    overflow-x: hidden;
+}
+.xl-img {
+    width: 97%;
+}
+.absolute__image {
+    position: absolute;
+    top: -35px;
+    left: 15px;
+    
+}
 .responsive__desc {
     color: var(--white-color);
     font-family: var(--body-font);
@@ -566,7 +597,9 @@
     width: 100%;
     margin-top: 100px;
     align-items: end;
+    justify-content: center;
     flex-wrap: wrap;
+    position: relative;
 }
 .responsive__device_img{
     width: 100%;
@@ -770,6 +803,51 @@
     border-radius: 0 0px 10px 0;
     z-index: 2;
   }
+.slider_active {
+    background-image: url(./assets/device-thumb-active.png) !important;
+}
+
+.custom-slide-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    
+}
+.slider__button_img {
+    height: 40px;
+    width: 70px;
+    padding-bottom: 10px;
+   
+    
+}
+.responsive__button_text {
+    font-family: var(--body-font);
+}
+.responsive__button_container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    gap: 10px;
+    padding-bottom: 100px;
+}
+.custom-slide-buttons::before, .custom-slide-buttons::after {
+    content: "";
+    height: 2px;
+    width: 50px;
+    margin: 0 5px;
+    display: inline-block;
+    background-color: var(--theme-color);
+}
+.custom-slide-button {
+    background-image: url(./assets/device-thumb.png);
+    padding: 2px 3px;
+    background-size: cover;
+    cursor: pointer;
+    width: fit-content;
+    transition: all .5s ease;
+}
 .testimonial-box_profile {
     display: flex;
     align-items: flex-end;
@@ -783,6 +861,38 @@
     z-index: -1;
     
 }
+.slider-container {
+    overflow: hidden;
+    position: relative; /* Added position relative */
+    margin: 50px 0;
+  }
+  
+  .slider {
+    display: flex;
+    transition: transform 0.5s ease;
+    position: relative; /* Added position relative */
+    gap: 10px;
+  }
+  
+  .slide {
+    flex: 0 0 33.33%; /* Display 3 slides at once */
+    width: 100%;
+    overflow: hidden; /* Hide overflow */
+    position: relative; /* Added position relative */
+  }
+  @media (max-width: 1150px) {
+    .slide {
+      flex: 0 0 50%; /* Show 1 slide at a time on smaller screens */
+    }
+  }
+  
+  /* Adjust for responsiveness */
+  @media (max-width: 768px) {
+    .slide {
+      flex: 0 0 100%; /* Show 1 slide at a time on smaller screens */
+    }
+  }
+  
 .testimonial-box_text {
     font-family: var(--body-font);
     color: var(--body-color);
@@ -889,6 +999,9 @@
 }
 
 @media screen and (max-width: 991px) {
+    .responsive__button_text {
+        display: none;
+    }
     .copyright__container {
         flex-direction: column;
         gap: 10px;
@@ -917,6 +1030,7 @@
         justify-content: space-between;
         align-items: center;
     }
+    
     .hero__heading {
         font-size: 42px;
     }
@@ -935,6 +1049,10 @@
     .contact__container {
         flex-direction: column;
         
+    }
+    .absolute__image {
+        top: -41px;
+        left: 9px;
     }
     
 .hero__thumb1,.hero__thumb2 
@@ -998,5 +1116,8 @@
     .testimonial-box_quote {
         top: 0;
         right: 0;
+    }
+    .custom-slide-buttons:before, .custom-slide-buttons:after {
+display: none;
     }
 }
