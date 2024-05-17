@@ -91,32 +91,38 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twentytwenty/1.0.0/css/twentytwenty.min.css">
 </head>
 <body>
-    <div class="topbar__section">
-           <div class="container ">
-            <div class="topbar__container">
-                <div class="contact__section_container">
-                    <div class="topbar__contact ">
-                        <i class="fas fa-envelope topbar__contact_icon"></i>
-                        <p class="contactUS__paragraph">info@clippingusa.com</p>
-                       </div>
-                        <div class="devider"></div>
-                       <div class="topbar__contact">
-                        <i class="fas fa-phone topbar__contact_icon"></i>
-                        <p class="contactUS__paragraph">+123456789</p>
-                       </div>
-                   </div>
-                   <div class="topbar__social_media">
-                    <a href="" class="social__media_a"><i class="fab fa-facebook-f topbar__social_icon"></i></a>
-                    <a href="" class="social__media_a"><i class="fab fa-google-plus-g topbar__social_icon"></i></a>
-                    <a href="" class="social__media_a"><i class="fab  fa-twitter topbar__social_icon"></i></a>
-                    <a href="" class="social__media_a"><i class="fab fa-linkedin-in topbar__social_icon"></i></a>
-                    <a href="" class="social__media_a"><i class="fab fa-youtube topbar__social_icon"></i></a>
-                   </div>
-            </div>
-               
+   <div class="topbar">
+    <div class="topbar__fullblack"></div>
+    <div class="main__topbar">
+      <div class="topbar__left"></div>
+    <div class="topbar__right">
+      <div class="topbar__right_container">
+        <div class="contact__info_topbar_right">
+          <div class="dd">
+            <div class="topbar__contact ">
+              <i class="fas fa-envelope topbar__contact_icon"></i>
+              <p class="contactUS__paragraph">info@clippingusa.com</p>
+             </div>
+              <div class="devider"></div>
+             <div class="topbar__contact">
+              <i class="fas fa-phone topbar__contact_icon"></i>
+              <p class="contactUS__paragraph">+123456789</p>
+             </div>
+          </div>
+          
+           <div class="topbar__social_media">
+            <a href="" class="social__media_a"><i class="fab fa-facebook-f topbar__social_icon"></i></a>
+            <a href="" class="social__media_a"><i class="fab fa-google-plus-g topbar__social_icon"></i></a>
+            <a href="" class="social__media_a"><i class="fab  fa-twitter topbar__social_icon"></i></a>
+            <a href="" class="social__media_a"><i class="fab fa-linkedin-in topbar__social_icon"></i></a>
+            <a href="" class="social__media_a"><i class="fab fa-youtube topbar__social_icon"></i></a>
            </div>
-           
+       </div>
+        </div>
+      </div>
     </div>
+    </div>
+   </div>
     <div class="middlebar__section container">
      <img src="./ClippingUSAClone/assets/Clipping-USA.png" alt="logo">
      <audio controls>
@@ -205,15 +211,14 @@
             </div>
             
             <div class="Service__provider_sectinon--two">
-                <div id="before-after-slider" class="img__beforeafter_container">
-                    <div id="before-image">
-                        <img class="img" src="./ClippingUSAClone/assets/Photoshop-masking-service-before.jpg" alt="Before">
-                    </div>
-                    <div id="after-image">
-                        <img class="img" src="./ClippingUSAClone/assets/Photoshop-masking-service-after.png" alt="After">
-                    </div>
-                    <div id="resizer"></div>
+              <div class="img-comp-container">
+                <div class="img-comp-img">
+                  <img src="./ClippingUSAClone/assets/Photoshop-masking-service-after.png" >
                 </div>
+                <div class="img-comp-img img-comp-overlay">
+                  <img src="./ClippingUSAClone/assets/Photoshop-masking-service-before.jpg" >
+                </div>
+              </div>
             </div>
         </div>
     </div>
@@ -258,9 +263,11 @@
     <div class="section section__feature">
         <div class="section__feature_one">
             <div class="tab-container">
-                <button class="tablink active" onclick="openTab(event, 'tab1')">Reviews</button>
+                <div class="tab__buttons">
+                  <button class="tablink active" onclick="openTab(event, 'tab1')">Reviews</button>
                 <button class="tablink" onclick="openTab(event, 'tab2')">Focus On</button>
                 <button class="tablink" onclick="openTab(event, 'tab3')">Services</button>
+                </div>
               
                 <div id="tab1" class="tabcontent">
                  <p class="tab__description service__provider_desc">
@@ -1058,6 +1065,63 @@
     
  <script src="./ClippingUSAClone/before_after.js"></script> 
     <script src="https://static.elfsight.com/platform/platform.js" data-use-service-core defer></script>
+    <script>
+      document.addEventListener('contextmenu', function(event) {
+        event.preventDefault();
+      });
+    </script>
+    <script>
+      document.addEventListener('keydown', function(event) {
+        // Prevent F12
+        if (event.key === 'F12') {
+          event.preventDefault();
+        }
+        // Prevent Ctrl+Shift+I
+        if (event.ctrlKey && event.shiftKey && event.key === 'I') {
+          event.preventDefault();
+        }
+        // Prevent Ctrl+Shift+C
+        if (event.ctrlKey && event.shiftKey && event.key === 'C') {
+          event.preventDefault();
+        }
+        // Prevent Ctrl+Shift+J
+        if (event.ctrlKey && event.shiftKey && event.key === 'J') {
+          event.preventDefault();
+        }
+        // Prevent Ctrl+U
+        if (event.ctrlKey && event.key === 'U') {
+          event.preventDefault();
+        }
+      });
+    </script>
+
+<script>
+  console.log = function() {};
+  console.warn = function() {};
+  console.error = function() {};
+</script>
+<script>
+  (function() {
+    const threshold = 160; // The height in pixels that is typical when DevTools is open at the bottom
+    let isDevToolsOpen = false;
+
+    function checkDevTools() {
+      const heightThreshold = window.outerHeight - window.innerHeight > threshold;
+      const widthThreshold = window.outerWidth - window.innerWidth > threshold;
+      if (heightThreshold || widthThreshold) {
+        if (!isDevToolsOpen) {
+          isDevToolsOpen = true;
+          document.body.innerHTML = ''; // Clear the content or redirect
+          alert("DevTools is open. Access denied.");
+        }
+      } else {
+        isDevToolsOpen = false;
+      }
+    }
+
+    setInterval(checkDevTools, 1000); // Check every second
+  })();
+</script>
    
 </body>
 </html>

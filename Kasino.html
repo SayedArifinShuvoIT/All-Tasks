@@ -128,11 +128,9 @@
 }
 
 .more_benefits {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-    flex-wrap: wrap;
-    align-items: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
    
 }
 .winners__lists {
@@ -144,16 +142,16 @@
 
 .more_benefit {
     display: flex;
-    max-width: 300px;
     gap: 20px;
     border: 1px solid #493b1b;
-    padding: 40px 20px;
+    padding: 30px 15px;
     border-radius: 5px;
     background-color: #041A34;
+    transition: all .5s;
 }
 .more_benefit:hover {
     border: 1px solid #b4903a;
-    box-shadow: 0 0 5px #b4903a;
+    box-shadow: 0 0 10px #b4903a;
 }
 
 .game_name, .win_amount {
@@ -172,6 +170,7 @@
 #sidebar1 {
   background-color: #020C25;
   padding: 20px;
+  width: 280px;
 }
 
 .button_two:hover {
@@ -197,7 +196,7 @@
     position: absolute;
     border: 1px solid #b4903a;
     height: 900px;
-    margin-left: -18px;
+    margin-left: -26px;
 }
 .footer_container{
   z-index: 10;
@@ -235,19 +234,24 @@
 border: 1px solid #b4903a;
 }
 .winner_list::before{
-  content: '○';
-  width: fit-content;
-  color: #d59d25;
-  text-shadow: 0 0 15px;
+  content: '';
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  border: 2px solid #d59d25;
+  background-color: transparent;
+  box-shadow: 0 0 15px #fff;
   position: absolute;
-  margin-left: -32px;
+  margin-left: -42px;
  
 }
 .winner_list::after {
-  content: '—';
-  color: #493b1b;
+  content: '';
+  width: 20px;
+  height: 1px;
+  background-color: #493b1b;
   position: absolute;
-  margin-left: -25px;
+  margin-left: -35px;
 } 
 .button_two::before {
   content: "";
@@ -592,6 +596,7 @@ background-color: #d59d25;
  
   box-shadow: 0 0 15px #b4903a;
 }
+
 .btn {
   position: relative;
   width: 250px;
@@ -605,7 +610,7 @@ background-color: #d59d25;
   font-weight: 700;
   letter-spacing: 1px;
   text-decoration: none;
-  
+  overflow-x: hidden;
   padding-left: 60px;
   overflow: hidden;
   transition: 0.5s ease-in-out;
@@ -613,7 +618,7 @@ background-color: #d59d25;
 }
 .btn:hover {
   padding-left: 0;
-  padding-right: 60px;
+  padding-right: 75px;
   
 }
 .btn span {
@@ -725,8 +730,9 @@ background-color: #d59d25;
   animation: move 3s infinite;
 }
 .margin_container {
-    padding:  50px 0;
+    padding:  50px 5px;
 }
+
 .blue_bg {
   background-color: #020C25;
 }
@@ -788,6 +794,9 @@ background-color: #d59d25;
   100% {
     box-shadow: #27272c;
   }
+}
+.winner_list:hover .winner_list::after {
+  background-color: #d59d25;
 }
 .qna_header {
   background-color: transparent;
@@ -851,7 +860,12 @@ left: 95%;
     display: none;
    }
    @media only screen and (max-width: 1200px) {
-
+    .more_benefits {
+ 
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+   
+}
     .headerbar {
       display: flex;
       justify-content: space-between;
@@ -878,6 +892,10 @@ left: 95%;
       }
       }
       @media only screen and (max-width: 767px){
+        .more_benefits {
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
         .hero__texts {
           justify-content: center;
           align-items: center;
@@ -901,13 +919,30 @@ left: 95%;
         .more_benefit {
           max-width: 700px;
         }
+        .btn:hover {
+    padding-left: 0;
+    padding-right:50px;
+}
+.btn:hover span {
+    left: calc(100% - 80px);
+}
       }
       @media only screen and (max-width: 440px) {
         .winners__lists::after {
           height: 991px;
         }
+        .btn:hover {
+    padding-left: 0;
+    padding-right:25px;
+}
+.btn:hover span {
+    left: calc(100% - 30px);
+}
       }
       @media only screen and (max-width: 616px){
+        #sidebar1 {
+          width: 200px;
+        }
         .qna_header {
           padding: 8px;
         }
@@ -926,6 +961,7 @@ left: 95%;
     height: 10vw;
     display: grid;
     place-items: center;
+    align-items: center;
     background: linear-gradient(#5b4516, #b4903a 5%, #b4903a, #fffea6, #d6b65f, #b4903a, #b4903a, #5b4516 100%);
     color: #020C25;
     border-radius: 80px;
@@ -951,13 +987,14 @@ left: 95%;
     position: absolute;
     display: grid;
     place-items: center;
+   
     left:0;
     width: 7vw;
     height: 7vw;
     background: #303030;
     color: #ffffff;
     border-radius: 50%;
-    font-size: .8rem;
+    font-size: .7rem;
     font-weight: 900;
     transition: 0.5s cubic-bezier(0.4, 0, 1, 1);
 }
@@ -1203,8 +1240,8 @@ left: 95%;
         <amp-carousel
         class="mobile"
         type="slides"
-        width="400"
-        height="200"
+        width="200"
+        height="300"
         layout="responsive"
         controls
         loop

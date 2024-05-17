@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let swiper; // Declare swiper variable
+    let swiper; 
 
     // Initialize Swiper
     swiper = new Swiper('.swiper', {
@@ -30,6 +30,30 @@ document.addEventListener("DOMContentLoaded", function() {
         },
       },
     });
+    var swiper2 = new Swiper('.swiper2', {
+      direction: 'horizontal',
+      spaceBetween: 10,
+      loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: true,
+      },
+      breakpoints: {
+        600: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        991: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+       1280: {
+        slidesPerView: 3,
+          spaceBetween: 20
+       }
+      }
+    });
+  
 
     var slideButtons = document.querySelectorAll('.custom-slide-button');
     slideButtons.forEach(function(button) {
@@ -79,8 +103,3 @@ document.addEventListener("DOMContentLoaded", function() {
     startSlider(); // Start slider initially
   });
   
-  const swiper2 = new Swiper('.swiper_testimonial', {
-    // Optional parameters
-    direction: 'horizoltal',
-    loop: true,
-  });

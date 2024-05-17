@@ -11,10 +11,12 @@
     margin: 0;
     font-family: 'siteFont',Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     
+    
 }
 .container {
     max-width: 1400px;
     margin: 0 auto;
+    overflow-x: hidden;
     
 }
 .right_topbar {
@@ -210,7 +212,7 @@
     color: #F26520;
     border: 5px solid #F26520;
     width: fit-content;
-    padding: 10px 20px;
+    padding: 12px 20px 10px;
     text-transform: uppercase;
   }
   .heading_section {
@@ -234,7 +236,7 @@
     width: fit-content;;
   }
   .secondary__heading {
-    font-size: 2.2rem; 
+    font-size: 24px; 
     text-transform: uppercase;
   }
   .secondary__heading::before {
@@ -366,7 +368,7 @@
     text-transform: uppercase;
   }
   .discount__button {
-    padding: 10px 20px;
+    padding: 12px 20px 15px;
     background-color: transparent;
     border: 2px solid #F26520;
     font-size: 1.5rem;
@@ -395,11 +397,19 @@
     display: none;
   }
   .active {
-    border: 1px solid #222 !important;
+   border-top: 3px solid #F26520 !important;
+   border-left: 1px solid#222 !important;
+   border-right: 1px solid#222 !important;
+   border-bottom: 2px solid #fff !important;
+
     color: #222 !important;
   }
   .tab__description {
     text-align: justify;
+    
+  }
+  .tab__buttons {
+    border-bottom: 1px solid #222;
   }
   .tablink {
     font-size: 1.5rem;
@@ -410,11 +420,12 @@
     border-radius: 5px;
   }
   .tab__description {
-    padding: 5px;
+    padding: 15px;
     border: 1px solid #222;
+    border-top: none;
     margin-top: 5px;
-    border-radius: 5px;
     min-height: 500px;
+    margin-top: 0;
   }
   .accordion {
     width: 100%;
@@ -577,7 +588,7 @@
   .form__paragraph {
     font-size: 22px;
     font-weight: 300;
-    line-height: 2em;
+    line-height: 1em;
   }
  .form__upper_div {
   display: flex;
@@ -597,7 +608,7 @@
  }
  .form__textarea {
   width: 100%;
-  height: 600px;
+  height: 325px;
   padding: 5px;
 
  }
@@ -629,7 +640,9 @@
   border-radius: 5px;
   cursor: pointer;
 }
-
+.form__heading {
+  font-size: 85px
+} 
 .form__submit_button {
   background-color: #f29720;
   padding: 10px 60px;
@@ -736,6 +749,7 @@
   align-items: center;
   max-width: 1400px;
   margin: 0 auto;
+  padding-top: 30px;
 }
 
 .upload__file_heading  {
@@ -758,13 +772,14 @@
 }
 
 .dragDrop__container {
-  padding: 100px 200px;
+  padding: 20vh 20vw;
+
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   color: #fff;
-  border: 2px solid #bfb6b6;
+  border: 2px solid #979292;
   margin-bottom: 150px;
 }
 .dragDrop__text_itelic {
@@ -1184,4 +1199,46 @@ border-radius: 50%;
 
 @media screen and (max-width: 991px) {
 
+}
+
+
+.topbar__fullblack {
+  width: 100%;
+  height: 5px;
+  background-color: #000;
+}
+
+.main__topbar {
+  display: flex;
+  min-height: 20px;
+}
+
+.topbar__left {
+  width: 33%;;
+  background-color: white;
+  
+  
+  transform: skewX(45deg);
+  margin-right: -30px;
+}
+.topbar__right 
+{
+  flex: 1;
+  background-color: #000;
+  
+  clip-path: polygon(1% 1%, 100% 0%, 100% 100%, 5% 100%);
+  overflow-x: hidden;
+  
+}
+.contact__info_topbar_right {
+  display: flex;
+  color: #fff;
+  padding: 0 50px;
+  max-width: 48vw;
+  align-items: center;
+  justify-content: space-between;
+}
+.dd {
+  display: flex;
+  align-items: center;
 }
