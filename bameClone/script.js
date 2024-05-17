@@ -79,3 +79,8 @@ document.addEventListener("DOMContentLoaded", function() {
     startSlider(); // Start slider initially
   });
   
+  const swiper2 = new Swiper('.swiper_testimonial', {
+    // Optional parameters
+    direction: 'horizoltal',
+    loop: true,
+  });
