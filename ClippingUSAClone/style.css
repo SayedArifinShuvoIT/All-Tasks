@@ -392,7 +392,10 @@
     justify-content: center;
     align-items: center;
   }
-
+  .tab-container {
+    position: relative;
+  }
+  
   .tabcontent {
     display: none;
   }
@@ -401,8 +404,10 @@
    border-left: 1px solid#222 !important;
    border-right: 1px solid#222 !important;
    border-bottom: 2px solid #fff !important;
-
-    color: #222 !important;
+   background-color: white !important;
+   position: relative;
+   margin-bottom: -77px;
+   color: #222 !important;
   }
   .tab__description {
     text-align: justify;
@@ -417,14 +422,14 @@
     color: #007bff;
     border: 1px solid transparent;
     background-color: transparent;
-    border-radius: 5px;
+    border-radius: 5px 5px 0 0;
   }
   .tab__description {
     padding: 15px;
     border: 1px solid #222;
     border-top: none;
     margin-top: 5px;
-    min-height: 500px;
+    min-height: 350px;
     margin-top: 0;
   }
   .accordion {
@@ -436,12 +441,13 @@
   }
   
   .accordion-header {
-    padding: 10px;
+    padding: 25px;
     background-color: #f4f4f4;
     cursor: pointer;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    color: #444;
   }
   
   .accordion-icon {

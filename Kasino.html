@@ -795,7 +795,7 @@ background-color: #d59d25;
     box-shadow: #27272c;
   }
 }
-.winner_list:hover .winner_list::after {
+.winner_list:hover::after {
   background-color: #d59d25;
 }
 .qna_header {
@@ -921,24 +921,13 @@ left: 95%;
         }
         .btn:hover {
     padding-left: 0;
-    padding-right:50px;
-}
-.btn:hover span {
-    left: calc(100% - 80px);
-}
-      }
-      @media only screen and (max-width: 440px) {
-        .winners__lists::after {
-          height: 991px;
-        }
-        .btn:hover {
-    padding-left: 0;
     padding-right:25px;
 }
 .btn:hover span {
-    left: calc(100% - 30px);
+    left: calc(100% - 75px);
 }
       }
+     
       @media only screen and (max-width: 616px){
         #sidebar1 {
           width: 200px;
@@ -949,6 +938,9 @@ left: 95%;
         .qna_header::before {
           display: none;
         }
+        .btn:hover span {
+    left: calc(100% - 45px);
+}
         .hero_section {
           background-image: url('./KasinoClone/assets/mobile_hero.jpg');
         }
@@ -973,6 +965,18 @@ left: 95%;
     overflow: hidden;
     transition: 0.5s ease-in-out;
 }
+@media only screen and (max-width: 440px) {
+        .winners__lists::after {
+          height: 991px;
+        }
+        .btn:hover {
+    padding-left: 0;
+    padding-right:25px;
+}
+.btn:hover span {
+    left: calc(100% - 30px);
+}
+      }
 .container {
   padding: 5px 10px;
 }

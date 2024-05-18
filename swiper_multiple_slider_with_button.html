@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Multiple Swipers with Navigation Buttons</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <style>
+    .swiper-container {
+      width: 200px;
+      height: 200px;
+      margin-bottom: 50px;
+    }
+    .conatiner {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .buttons {
+      display: flex;
+      justify-content: center;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .buttons button {
+      padding: 10px 20px;
+      font-size: 16px;
+    }
+  </style>
+</head>
+<body>
+  <div class="conatiner">
+    <div class="swiper-container swiper1">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://via.placeholder.com/150/FF0000/FFFFFF?text=1" alt=""></div>
+            <div class="swiper-slide"><img src="https://via.placeholder.com/150/FF0000/FFFFFF?text=2" alt=""></div>
+            <div class="swiper-slide"><img src="https://via.placeholder.com/150/FF0000/FFFFFF?text=3" alt=""></div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="swiper-container swiper2">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://via.placeholder.com/150/00FF00/FFFFFF?text=1" alt=""></div>
+            <div class="swiper-slide"><img src="https://via.placeholder.com/150/00FF00/FFFFFF?text=2" alt=""></div>
+            <div class="swiper-slide"><img src="https://via.placeholder.com/150/00FF00/FFFFFF?text=3" alt=""></div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="swiper-container swiper3">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://via.placeholder.com/150/0000FF/FFFFFF?text=1" alt=""></div>
+            <div class="swiper-slide"><img src="https://via.placeholder.com/150/0000FF/FFFFFF?text=2" alt=""></div>
+            <div class="swiper-slide"><img src="https://via.placeholder.com/150/0000FF/FFFFFF?text=3" alt=""></div>
+          </div>
+        </div>
+      </div>
+    
+      <div class="swiper-container swiper4">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="https://via.placeholder.com/150/FFFF00/FFFFFF?text=1" alt=""></div>
+            <div class="swiper-slide"><img src="https://via.placeholder.com/150/FFFF00/FFFFFF?text=2" alt=""></div>
+            <div class="swiper-slide"><img src="https://via.placeholder.com/150/FFFF00/FFFFFF?text=3" alt=""></div>
+          </div>
+        </div>
+      </div>
+    
+  </div>
+  <div class="buttons">
+    <button id="goToSlide1">Go to Slide 1</button>
+    <button id="goToSlide2">Go to Slide 2</button>
+    <button id="goToSlide3">Go to Slide 3</button>
+  </div>
+
+  <script>
+    const swipers = ['.swiper1', '.swiper2', '.swiper3', '.swiper4'];
+
+    const swiperInstances = swipers.map(selector => {
+      return new Swiper(`${selector} .swiper`, {
+        direction: 'horizontal',
+        loop: true,
+        pagination: {
+          el: `${selector} .swiper-pagination`,
+        },
+        navigation: {
+          nextEl: `${selector} .swiper-button-next`,
+          prevEl: `${selector} .swiper-button-prev`,
+        },
+        scrollbar: {
+          el: `${selector} .swiper-scrollbar`,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+      });
+    });
+
+    document.getElementById('goToSlide1').addEventListener('click', () => {
+      swiperInstances.forEach(swiper => swiper.slideToLoop(0));
+    });
+
+    document.getElementById('goToSlide2').addEventListener('click', () => {
+      swiperInstances.forEach(swiper => swiper.slideToLoop(1));
+    });
+
+    document.getElementById('goToSlide3').addEventListener('click', () => {
+      swiperInstances.forEach(swiper => swiper.slideToLoop(2));
+    });
+  </script>
+</body>
+</html>
