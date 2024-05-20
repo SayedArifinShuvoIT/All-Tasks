@@ -778,7 +778,7 @@
 }
 
 .dragDrop__container {
-  padding: 20vh 20vw;
+  padding: 15vh 20vw;
 
   display: flex;
   justify-content: center;
@@ -892,7 +892,6 @@
   position: absolute;
   z-index:9;
   cursor: ew-resize;
-  /*set the appearance of the slider:*/
   width: 40px;
   height: 40px;
   background-color: #2196F3;
@@ -1041,9 +1040,6 @@ background: url(./assets/E-commerce-photo-editing-service.jpg) top center no-rep
     right: 0;
     margin: auto;
 }
-/****************/
-/*	 BX-SLIDER 	*/
-/****************/
 
 section.client .section-title {
 	margin-bottom: 6em;
@@ -1201,12 +1197,6 @@ border-radius: 50%;
   width: 37%;
   padding: 12px 0 ;
 }
-
-
-@media screen and (max-width: 991px) {
-
-}
-
 
 .topbar__fullblack {
   width: 100%;

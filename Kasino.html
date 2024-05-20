@@ -208,6 +208,7 @@
     justify-content: center;
     gap: 20px;
     max-width: 350px;
+    margin-bottom: 20px;
 }
 .winner_list {
     display: flex;
@@ -220,6 +221,7 @@
     border-radius: 10px;
    flex:1;
     border: 1px solid transparent;
+    margin-left: 10px;
 }
 .nav_link_mobile {
   border-bottom: 1px solid #fff;
@@ -242,16 +244,19 @@ border: 1px solid #b4903a;
   background-color: transparent;
   box-shadow: 0 0 15px #fff;
   position: absolute;
-  margin-left: -42px;
+  margin-left: -53px;
  
+}
+.container.footer_container {
+    padding: 30px 0;
 }
 .winner_list::after {
   content: '';
-  width: 20px;
+  width: 30px;
   height: 1px;
   background-color: #493b1b;
   position: absolute;
-  margin-left: -35px;
+  margin-left: -45px;
 } 
 .button_two::before {
   content: "";
@@ -379,7 +384,6 @@ border: 1px solid #b4903a;
             min-height: 170px;
         }
         .game__card_section  {
-            margin-top: 10vh;
             margin-bottom: 20px;
         }
         .user__step {
@@ -892,6 +896,9 @@ left: 95%;
       }
       }
       @media only screen and (max-width: 767px){
+        .benefit__section {
+          padding: 10px 0;
+        }
         .more_benefits {
   grid-template-columns: repeat(1, 1fr);
   gap: 20px;
@@ -1027,6 +1034,7 @@ left: 95%;
       @media (max-width: 767px) {
         .normal__heading {
     font-size: 2rem;
+    margin-bottom: 10px;
 }
 .benefit__heading {
   font-size: 1rem;
@@ -1244,8 +1252,8 @@ left: 95%;
         <amp-carousel
         class="mobile"
         type="slides"
-        width="200"
-        height="300"
+        width="100"
+        height="70"
         layout="responsive"
         controls
         loop
@@ -1256,43 +1264,21 @@ left: 95%;
         role="region"
         aria-label="Looping carousel"
       >
-      <div class="game__card">
-        <h2 class="card__name">Number Buy</h2>
-        <amp-img src="./KasinoClone/assets/60b749a4dc6421622624676.jpg"
-          width="250"
-          height="250"
-         
-          alt="">
-        </amp-img>
-        <p class="card__limit">Invest Limit:<br/> $1.96 - $1000.65</p>
-        <button class="button_13" style="--clr: #39ff14">
-            <span>Play Now</span><i></i>
-          </button>
-    </div>
-    <div class="game__card">
-        <h2 class="card__name">Roulette</h2>
-        <amp-img src="./KasinoClone/assets/Roulette.jpg"
-          width="250"
-          height="250"
-          alt="">
-        </amp-img>
-        <p class="card__limit">Invest Limit:<br/>  $1.96 - $1000.65</p>
-        <button class="button_13" style="--clr: #39ff14">
-            <span>Play Now</span><i></i>
-          </button>
-    </div>
-    <div class="game__card">
-        <h2 class="card__name">Zero To Ninty Nine</h2>
-        <amp-img src="./KasinoClone/assets/Zero To Ninty Nine.jpg"
-          width="250"
-          height="250"
-          alt="">
-        </amp-img>
-        <p class="card__limit">Invest Limit:<br/>  $1.96 - $1000.65</p>
-        <button class="button_13" style="--clr: #39ff14">
-            <span>Play Now</span><i></i>
-          </button>
-    </div></amp-carousel>
+    <amp-img src="./KasinoClone/assets/game card 1.png"
+      width="200"
+      height="350"
+      style="max-width: 350px;"
+      layout="responsive"
+      alt="">
+    </amp-img>  
+    <amp-img src="./KasinoClone/assets/game card 2.png"
+    style="max-width: 350px;"
+      width="200"
+      height="350"
+      layout="responsive"
+      alt="">
+    </amp-img> 
+    </amp-carousel>
     </div>
     <div class="benefit__section">
         <div class="container">
