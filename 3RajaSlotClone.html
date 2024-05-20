@@ -9,7 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Poppins:wght@100..900&display=swap" rel="stylesheet">
     <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
-
+    <script async custom-element="amp-sidebar" src="https://cdn.ampproject.org/v0/amp-sidebar-0.1.js"></script>
+    <script async custom-element="amp-accordion" src="https://cdn.ampproject.org/v0/amp-accordion-0.1.js"></script>
     <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
@@ -24,6 +25,7 @@
        .container {
         max-width: 1170px;
         margin: 0 auto;
+        padding: 0 10px;
        }
        .game_card_img_container {
         gap: 5px;
@@ -35,12 +37,17 @@
        }
        .navbar__right_top {
         margin-bottom: 10px;
+        flex-wrap: wrap;
        }
        .navbar__right_top ,.navbar__right_bottom {
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 5px;
+        
+       }
+       .mobile_grediant {
+        display: none;
        }
        .site_settings {
         display: flex;
@@ -85,6 +92,9 @@
 .menubar__icon {
     font-size: 22px;
     margin-bottom: 10px;
+}
+ul,li{
+    text-decoration: none;
 }
 .share__icon {
     color: #fedc3d;
@@ -349,6 +359,279 @@
     top: 0;
     width: 0;
 }
+.info_texts {
+    padding: 20px;
+}
+.info_text {
+    color: #c90;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    margin: 0;
+}
+.info_description {
+    font-size: 17px;
+    text-align: center;
+}
+.progress {
+    background-color: #f5f5f5;
+    border-radius: 4px;
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .1);
+    height: 21px;
+    margin-bottom: 21px;
+    overflow: hidden;
+}
+.progress-bar {
+    background-color: #40fe41;
+    box-shadow: inset 0 -1px 0 rgba(0, 0, 0, .15);
+    color: #fff;
+    float: left;
+    font-size: 12px;
+    height: 100%;
+    line-height: 21px;
+    text-align: center;
+}
+.info__box_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.secondary_description {
+    font-size: 13px;
+    margin: 0;
+}
+.info_textsss{
+    margin: 20px;
+}
+.secondary_heading {
+    margin-bottom: 5px;
+}
+.list__doc {
+    font-weight: 600;
+    font-size: 14px;
+}
+.list__doc::before {
+    content: "■";
+    font-size: 25px;
+    margin-right: 5px;
+    color: #c90;
+}
+.contact_container {
+    display: flex;
+    column-gap: 100px;
+    align-items: center;
+}
+.adrs__texts {
+    text-align: center;
+}
+.adrs_icon {
+    font-size: 24px;
+}
+.adres_heading,.adrs__subheading {
+    font-size: 14px;
+    margin: 10px;
+}
+.hamburger-button ,.sidebar-close {
+    border: none;
+    background-color:transparent;
+    color: #c90;
+    font-size: 25px;
+    display:none;
+}
+.sidebar-close {
+    margin-bottom: 30px;
+}
+.mobile__sidebar {
+    width: 250px;
+    background-color: #230007;
+    padding: 20px;
+}
+.mobile_link {
+    text-decoration: none;
+    color: #ff0;
+
+}
+.mobile_links {
+    background-color: #230007;
+}
+.accordian_header {
+    background-color: transparent;
+    color: #fedc3d;
+}
+.mobile_submenu {
+    padding: 10px;
+}
+.mobile_submenu_text {
+    cursor: pointer;
+}
+.footer_container {
+    background-color: #000;
+}
+.footer_upper {
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+    border-bottom: 1px dotted #fedc3d;
+    flex-wrap: wrap;
+}
+.footer_2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    border-bottom: 1px solid #c90;
+}
+.footer_2_1 {
+    min-width: 200px;
+    max-width: 250px;
+
+}
+.footer_2_heading {
+    font-size: 12px;
+    color: #a27e11;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #a27e11;
+    font-weight: 300px;
+}
+.footer_2_subheading,.footer_2_desc {
+    font-size: 12px;
+}
+.footer_3 {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid #c90;
+    padding-bottom: 20px;
+}
+.footer_3_topbar {
+    font-size: 12px;
+}
+.footer_3_social_media_icon  {
+    font-size: 25px;
+    background-color: transparent;
+    border-radius: 50%;
+    padding: 10px;
+    width: 25px;
+    border: 2px solid #fff;
+    color: #fff;
+    transition: .5s;
+}
+.f1_icon:hover {
+   border-color: #3a589d;
+   background-color: #3a589d;
+}
+.f2_icon:hover {
+border-color: #38c0ff;
+background-color: #38c0ff;
+}
+.f3_icon:hover{
+    border-color: #3b6994;
+    background-color: #3b6994
+}
+.f4_icon:hover{
+    border-color: red;
+    background-color: red;
+}
+
+@media (max-width: 1180px) {
+    .menubar_conatiner {
+        display: none;
+    }
+    .hamburger-button ,.sidebar-close {
+        display: block;
+    }
+    .info_container {
+    grid-template-columns: repeat(2, 1fr);}
+    .jackpot_bg::before {
+        font-size: 1.8rem;
+    }
+}
+@media (max-width: 991px) {
+    .trending__slider {
+        display: none;
+    }
+    .jackpot_bg::before  {
+        left: 32%;
+    }
+    .grediant_bg {
+      display: none;
+    }
+    .diposite__profile {
+        max-width: none;
+        border-radius: 0;
+    }
+    .mobile_grediant {
+        display: block;
+    }
+    
+    
+}
+
+@media(max-width:750px){
+    .info_texts{
+        padding: 5px;
+    }
+    .footer_3 {
+        flex-direction: column;
+        text-align: center;
+    }
+    .navar__container {
+        flex-direction: column;
+    }
+    .navbar__left {
+        display: flex;
+        justify-content: space-between;
+    }
+    .jackpot_bg::before {
+        left: 29%;
+    }
+}
+@media (max-width: 600px) {
+    .info_container {
+    grid-template-columns: repeat(1, 1fr);
+}
+    .jackpot_bg::before {
+        left: 21%;
+    }
+    .footer_2_1 {
+        max-width: none;
+    }
+    .navbar__right {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    .jackpot_bg::before {
+        left: 23%;
+    }
+    .info::before {
+        border: none;
+    }
+    .info::after {
+        border: none;
+    }
+}
+@media (max-width: 500px) {
+    .jackpot_bg::before {
+        font-size: 1.5rem;
+        left: 23%;
+    }
+}
+@media (max-width: 400px) {
+    .jackpot_bg::before {
+
+        left: 16%;
+    }
+}
+@media (max-width: 360px) {
+    .jackpot_bg::before {
+font-size: 1.3rem;
+        left: 15%;
+    }
+}
 </style>
 </head>
 <body>
@@ -359,6 +642,7 @@
            height="65"
            alt="logo">
          </amp-img>
+         <button on="tap:sidebar.toggle" class="hamburger-button">☰</button>
       </div>
       <div class="navbar__right">
           <div class="navbar__right_top">
@@ -372,6 +656,7 @@
                   height="25"
                   alt="indonesia flag">
                 </amp-img>
+                
                 <div class="site_infos">
                     <select class="navbar__select">
                         <option class="navbar__select_option" value="">INDONESIA</option>
@@ -399,6 +684,8 @@
             <div class="divider"></div>
             <button class="login">Login</button>
             <button class="register">Daftar</button>
+            
+
           </div>
       </div>
   </div>
@@ -486,6 +773,55 @@
         </div>
     </div>
   </div>
+  <div class="mobile__manubar">
+    
+    <amp-sidebar class="mobile__sidebar" id="sidebar" layout="nodisplay" side="left">
+        <button on="tap:sidebar.close" class="sidebar-close">✖</button>
+        <nav>
+          <div class="mobile_links">
+            <div class="" ><a class="mobile_link" href="#"><i class="fas fa-mobile-alt menubar__icon"></i>
+                <span class="menubar__text">Mobile</span></a></div>
+            <div>
+              <amp-accordion disable-session-states>
+                <section>
+                  <header class="accordian_header" style="border: none;"><i class="fas fa-dice menubar__icon"></i>
+                    <span  class="menubar__text">Slots</span></header>
+                  <div class="mobile_submenu">
+                    <div class="mobile_submenu_text">Pragmatic Classic</div>
+                    <div  class="mobile_submenu_text">Reel Kingdom</div>
+                    <div  class="mobile_submenu_text">Pragmatic</div>
+                    <div  class="mobile_submenu_text">Pragmatic Classic</div>
+                    <div  class="mobile_submenu_text">Reel Kingdom</div>
+                  </div>
+                </section>
+              </amp-accordion>
+              <div class="" ><a class="mobile_link" href="#"><i class="fas fa-mobile-alt menubar__icon"></i>
+                <span class="menubar__text">Mobile</span></a></div>
+            <div>
+                <div class="" ><a class="mobile_link" href="#"><i class="fas fa-mobile-alt menubar__icon"></i>
+                    <span class="menubar__text">Mobile</span></a></div>
+                <div>
+                    <div class="" ><a class="mobile_link" href="#"><i class="fas fa-mobile-alt menubar__icon"></i>
+                        <span class="menubar__text">Mobile</span></a></div>
+                    <div>
+                        <div class="" ><a class="mobile_link" href="#"><i class="fas fa-mobile-alt menubar__icon"></i>
+                            <span class="menubar__text">Mobile</span></a></div>
+                        <div>
+                            <div class="" ><a class="mobile_link" href="#"><i class="fas fa-mobile-alt menubar__icon"></i>
+                                <span class="menubar__text">Mobile</span></a></div>
+                            <div>
+                                <div class="" ><a class="mobile_link" href="#"><i class="fas fa-mobile-alt menubar__icon"></i>
+                                    <span class="menubar__text">Mobile</span></a></div>
+                                <div>
+                                    <div class="" ><a class="mobile_link" href="#"><i class="fas fa-mobile-alt menubar__icon"></i>
+                                        <span class="menubar__text">Mobile</span></a></div>
+                                    <div>
+            </div>
+            
+          </div>
+        </nav>
+      </amp-sidebar>
+  </div>
   <div class="slider__hero">
     <amp-carousel width="450" height="100" layout="responsive" type="slides" autoplay delay="2000" role="region" aria-label="Carousel with autoplay">
         <amp-img src="./3RajaSlotClone/assets/hero image 1.webp" width="900" height="100" layout="responsive" alt="a sample image"></amp-img>
@@ -516,7 +852,7 @@
     </div>
     <div class="trending__slider">
         <p style="font-weight: 400;">GAME TERPOPULAR <i style="color: red;" class="fas fa-fire"></i></p>
-        <amp-carousel width="400" height="100" layout="responsive" type="slides" autoplay delay="2000" role="region" aria-label="Carousel with autoplay">
+        <amp-carousel width="400" height="170" layout="responsive" type="slides" autoplay delay="2000" role="region" aria-label="Carousel with autoplay">
             
            <div style="display: flex;" class="game_card_img_container">
             <amp-img src="./3RajaSlotClone/assets/1.png"
@@ -580,7 +916,7 @@
     </div>
   </div>
   <div class="container">
-    <h4 class="main__heading">Setoran Terakhir</h4>
+    <h4 style="margin-top: -40px;" class="main__heading">Setoran Terakhir</h4>
     <div class="grediant_bg">
         <amp-carousel width="1600" height="100" layout="responsive" type="slides" autoplay delay="2000" role="region" aria-label="Carousel with autoplay">
             <div class="dipo__container">
@@ -684,6 +1020,46 @@
             </div>
           </amp-carousel>
        
+    </div>
+    <div class="mobile_grediant">
+        <amp-carousel id="custom-button" width="400" height="60" layout="responsive" type="slides" autoplay delay="2000" role="region" aria-label="Carousel with custom button styles">
+            <div class="diposite__profile">
+                <amp-img src="./3RajaSlotClone/assets/lw_avathar_circle.webp"
+                  width="25"
+                  height="25"
+                  alt="">
+                </amp-img>
+                <div class="text__section">
+                    <h5 class="profile_name">ade***********</h5>
+                    <p class="ammount">Deposit, 2024-05-18 16:07</p>
+                </div>
+                <p class="win">IDR 25K</p>
+            </div>
+            <div class="diposite__profile">
+                <amp-img src="./3RajaSlotClone/assets/lw_avathar_circle.webp"
+                  width="25"
+                  height="25"
+                  alt="">
+                </amp-img>
+                <div class="text__section">
+                    <h5 class="profile_name">ade***********</h5>
+                    <p class="ammount">Deposit, 2024-05-18 16:07</p>
+                </div>
+                <p class="win">IDR 25K</p>
+            </div>
+            <div class="diposite__profile">
+                <amp-img src="./3RajaSlotClone/assets/lw_avathar_circle.webp"
+                  width="25"
+                  height="25"
+                  alt="">
+                </amp-img>
+                <div class="text__section">
+                    <h5 class="profile_name">ade***********</h5>
+                    <p class="ammount">Deposit, 2024-05-18 16:07</p>
+                </div>
+                <p class="win">IDR 25K</p>
+            </div>
+          </amp-carousel>
     </div>
   </div>
   <div class="container">
@@ -792,10 +1168,39 @@
           </amp-carousel>
        
     </div>
+    <div class="mobile_grediant">
+        <amp-carousel id="custom-button" width="400" height="60" layout="responsive" type="slides" autoplay delay="2000" role="region" aria-label="Carousel with custom button styles">
+            <div class="diposite__profile withdrow">
+                <amp-img src="./3RajaSlotClone/assets/lw_avathar_circle.webp"
+                  width="25"
+                  height="25"
+                  alt="">
+                </amp-img>
+                <div class="text__section">
+                    <h5 class="profile_name">ade***********</h5>
+                    <p class="ammount">Withdraw, 2024-05-18 16:07</p>
+                </div>
+                <p class="win">IDR 25K</p>
+            </div>
+            <div class="diposite__profile withdrow">
+                <amp-img src="./3RajaSlotClone/assets/lw_avathar_circle.webp"
+                  width="25"
+                  height="25"
+                  alt="">
+                </amp-img>
+                <div class="text__section">
+                    <h5 class="profile_name">ade***********</h5>
+                    <p class="ammount">Withdraw, 2024-05-18 16:07</p>
+                </div>
+                <p class="win">IDR 25K</p>
+            </div>
+          </amp-carousel>
+    </div>
   </div>
   <div class="container info_container">
     <div class="info gradient-border gradient-border-height">
-        <h2 class="info_text">BONUS NEW MEMBER IDR 10.000</h2>
+        <div class="info_texts">
+            <h4 style="margin-bottom: 20px;" class="info_text">BONUS NEW MEMBER IDR 10.000</h4>
         <amp-img src="./3RajaSlotClone/assets/info1.webp"
         class="infobox_img"
           width="200"
@@ -803,14 +1208,226 @@
           layout="responsive"
           alt="info">
         </amp-img>
-        <h2 class="info_text">BONUS NEW MEMBER IDR 10.000</h2>
+        <h4 style="text-align: center;" class="info_text">BONUS NEW MEMBER IDR 10.000</h4>
         <p class="info_description">Cukup Dengan Deposit IDR 50.000 Sudah Bisa Mendapatkan Bonus New Member</p>
+        </div>
     </div>
-    <div class="info gradient-border gradient-border-height">2</div>
-    <div class="info gradient-border">3</div>
-    <div class="info gradient-border-height">4</div>
-    <div class="info gradient-border-height">5</div>
-    <div class="info">6</div>
+    <div class="info gradient-border gradient-border-height">
+        <div class="info_texts">
+            <h4 style="margin-bottom: 20px;" class="info_text">BONUS NEXT DEPOSIT 10%</h4>
+        <amp-img src="./3RajaSlotClone/assets/info2.webp"
+        class="infobox_img"
+          width="200"
+          height="100"
+          layout="responsive"
+          alt="info">
+        </amp-img>
+        <h4 style="text-align: center;" class="info_text">BONUS NEXT DEPOSIT 10%</h4>
+        <p class="info_description">Cukup Dengan Deposit IDR 50.000 Sudah Bisa Mendapatkan Bonus Deposit Khusus Slot</p>
+        </div>
+    </div>
+    <div class="info gradient-border">
+    <div class="info_textss">
+        <h4 style="margin-top: 20px;" class="info_text">KELEBIHAN LAYANAN</h4>
+        <div class="info__box_container">
+            <div class="text__container">
+                <h4 class="secondary_heading">DEPOSIT</h4>
+                <p class="secondary_description">Waktu rata-rata</p>
+            </div>
+            <h2 style="font-size: 35px;">1<span style="font-size: 10px;">Mins</span></h2>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 1%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <div class="info_textss">
+        <div class="info__box_container">
+            <div class="text__container">
+                <h4 class="secondary_heading">WITHDRAW</h4>
+                <p class="secondary_description">Waktu rata-rata</p>
+            </div>
+            <h2 style="font-size: 35px;">1<span style="font-size: 10px;">Mins</span></h2>
+        </div>
+    </div>
+    <div class="progress">
+        <div class="progress-bar" role="progressbar" style="width: 3%;" aria-valuenow="1" aria-valuemin="0" aria-valuemax="100"></div>
+    </div>
+    <p style="font-size: 11.2px;">*Referensi Waktu Rata-rata tidak berlaku jika bank offline, gangguan koneksi, dan informasi yang tidak lengkap disediakan</p>
+</div>
+
+    <div class="info gradient-border-height">
+        <div class="info_textsss">
+        <h4 style="margin-top: 20px;" class="info_text">JENIS PERMAINAN</h4>
+                <div class="box__container">
+                    <h4 class="secondary_heading">SPORTSBOOK</h4>
+                <p class="secondary_description">Tuan rumah hingga 10 game P2P luar biasa dengan pemain sungguhan dan tanpa bot.</p>
+                </div>
+                <div class="box__container">
+                    <h4 class="secondary_heading">TEMBAK IKAN</h4>
+                <p class="secondary_description">Menangkan lebih banyak dengan bertaruh dengan lebih banyak pilihan nomor di keno klasik dan pamungkas kami!</p>
+                </div>
+                <div class="box__container">
+                    <h4 class="secondary_heading">SLOTS</h4>
+                <p class="secondary_description">Rasakan pengalaman dan adrenalin yang sama seperti di kasino sungguhan.</p>
+                </div>
+    </div>
+    </div>
+    <div class="info gradient-border-height">
+         <div class="info_textsss">
+        <h4 style="margin-top: 20px;" class="info_text">PUSAT INFO</h4>
+                <div class="box__container">
+                <p class="list__doc">Cara Bermain SportsBook</p>
+                <p class="list__doc">Cara Melakukan Deposit</p>
+                <p class="list__doc">Cara Melakukan Withdraw </p>
+                </div>
+    </div>
+    </div>
+    <div class="info">
+         <div class="info_textsss">
+        <h4 style="margin-top: 20px;" class="info_text">KONTAK LAYANAN PELANGGAN</h4>
+                <div class="box__container">
+               <div class="contact_container">
+                  <i class="adrs_icon fas fa-envelope message-icon"></i>
+                  <div class="adrs__texts">
+                    <h5 class="adres_heading">Obrolan Langsung</h5>
+                    <p class="adrs__subheading">Klik disini</p>
+                  </div>
+               </div>
+               <div class="contact_container">
+                  <i class="adrs_icon fab fa-whatsapp"></i>
+                  <div class="adrs__texts">
+                    <h5 class="adres_heading">WHATSAPP</h5>
+                    <p class="adrs__subheading">6285361676472</p>
+                  </div>
+               </div>
+               <div class="contact_container">
+                  <i class=" adrs_icon fab fa-telegram-plane"></i>
+                  <div class="adrs__texts">
+                    <h5 class="adres_heading">TELEGRAM</h5>
+                    <p class="adrs__subheading">tigarajaslot</p>
+                  </div>
+               </div>
+                </div>
+    </div>
+    </div>
+  </div>
+  <div class="footer_container">
+    <div class="container">
+        <div class="footer_upper">
+            <p class="upper_left_text">Tentang kami|Info Perbankan|Pusat Info|Hubungi kami</p>
+            <p class="upper_right_text">@2024 3RAJASLOT. Seluruh hak cipta | 18+ | v1.55</p>
+        </div>
+        <div class="footer_2">
+            <div class="footer_2_1">
+                <h4 class="footer_2_heading">INFORMASI</h4>
+                <p class="footer_2_subheading">Registrasi</p>
+                <p class="footer_2_desc">Bergabunglah 3RAJASLOT untuk mengalami permainan yang luar biasa dan menarik. Nikmati kepuasan dengan bonus dan promosi di situs kami.</p>
+                <p class="footer_2_subheading">Afiliasi</p>
+                <p class="footer_2_desc">Menjadi mitra kami dengan bergabung dengan afiliasi 3RAJASLOT. Dapatkan penghasilan dan komisi Anda setiap bulan dengan mengundang teman-teman Anda untuk bermain di 3RAJASLOT.</p>
+                <p class="footer_2_subheading">Game yang bertanggung jawab</p>
+                <p class="footer_2_desc">3RAJASLOT menawarkan game online terbaik dengan tanggung jawab penuh dan game fairplay. Keamanan selalu menjadi prioritas kami.</p>
+                <p class="footer_2_subheading">Keamanan</p>
+                <p class="footer_2_desc">3RAJASLOT menawarkan game online terbaik dengan tanggung jawab penuh dan game fairplay. Keamanan selalu menjadi prioritas kami.</p>
+                
+            </div>
+            <div class="footer_2_1">
+                <h4 class="footer_2_heading">INFORMASI</h4>
+                <p class="footer_2_subheading">Registrasi</p>
+                <p class="footer_2_desc">Bergabunglah 3RAJASLOT untuk mengalami permainan yang luar biasa dan menarik. Nikmati kepuasan dengan bonus dan promosi di situs kami.</p>
+                <p class="footer_2_subheading">Afiliasi</p>
+                <p class="footer_2_desc">Menjadi mitra kami dengan bergabung dengan afiliasi 3RAJASLOT. Dapatkan penghasilan dan komisi Anda setiap bulan dengan mengundang teman-teman Anda untuk bermain di 3RAJASLOT.</p>
+                <p class="footer_2_subheading">Game yang bertanggung jawab</p>
+                <p class="footer_2_desc">3RAJASLOT menawarkan game online terbaik dengan tanggung jawab penuh dan game fairplay. Keamanan selalu menjadi prioritas kami.</p>
+                <p class="footer_2_subheading">Keamanan</p>
+                <p class="footer_2_desc">3RAJASLOT menawarkan game online terbaik dengan tanggung jawab penuh dan game fairplay. Keamanan selalu menjadi prioritas kami.</p>
+                
+            </div>
+            <div class="footer_2_1">
+                <h4 class="footer_2_heading">INFORMASI</h4>
+                <p class="footer_2_subheading">Registrasi</p>
+                <p class="footer_2_desc">Bergabunglah 3RAJASLOT untuk mengalami permainan yang luar biasa dan menarik. Nikmati kepuasan dengan bonus dan promosi di situs kami.</p>
+                <p class="footer_2_subheading">Afiliasi</p>
+                <p class="footer_2_desc">Menjadi mitra kami dengan bergabung dengan afiliasi 3RAJASLOT. Dapatkan penghasilan dan komisi Anda setiap bulan dengan mengundang teman-teman Anda untuk bermain di 3RAJASLOT.</p>
+                <p class="footer_2_subheading">Game yang bertanggung jawab</p>
+                <p class="footer_2_desc">3RAJASLOT menawarkan game online terbaik dengan tanggung jawab penuh dan game fairplay. Keamanan selalu menjadi prioritas kami.</p>
+                <p class="footer_2_subheading">Keamanan</p>
+                <p class="footer_2_desc">3RAJASLOT menawarkan game online terbaik dengan tanggung jawab penuh dan game fairplay. Keamanan selalu menjadi prioritas kami.</p>
+                
+            </div>
+            <div class="footer_2_1">
+                <h4 class="footer_2_heading">INFORMASI</h4>
+                <p class="footer_2_subheading">Registrasi</p>
+                <p class="footer_2_desc">Bergabunglah 3RAJASLOT untuk mengalami permainan yang luar biasa dan menarik. Nikmati kepuasan dengan bonus dan promosi di situs kami.</p>
+                <p class="footer_2_subheading">Afiliasi</p>
+                <p class="footer_2_desc">Menjadi mitra kami dengan bergabung dengan afiliasi 3RAJASLOT. Dapatkan penghasilan dan komisi Anda setiap bulan dengan mengundang teman-teman Anda untuk bermain di 3RAJASLOT.</p>
+                <p class="footer_2_subheading">Game yang bertanggung jawab</p>
+                <p class="footer_2_desc">3RAJASLOT menawarkan game online terbaik dengan tanggung jawab penuh dan game fairplay. Keamanan selalu menjadi prioritas kami.</p>
+                <p class="footer_2_subheading">Keamanan</p>
+                <p class="footer_2_desc">3RAJASLOT menawarkan game online terbaik dengan tanggung jawab penuh dan game fairplay. Keamanan selalu menjadi prioritas kami.</p>
+                
+            </div>
+        </div>
+        <div class="footer_3">
+            <div class="footer_3_left">
+                <p class="footer_3_topbar">Platform Penyedia Layanan</p>
+                <amp-img src="./3RajaSlotClone/assets/site logo.webp"
+                  width="200"
+                  height="50"
+                  alt="logo">
+                </amp-img>
+            </div>
+            <div class="footer_3_right">
+                <a href="" class="footer_3_social_media"><i class="f1_icon footer_3_social_media_icon fab fa-facebook-f"></i></a>
+                <a href="" class="footer_3_social_media"><i class=" f2_icon  footer_3_social_media_icon fab fa-twitter"></i></a>
+                <a href="" class="footer_3_social_media"><i class="f3_icon  footer_3_social_media_icon fab fa-instagram"></i></a>
+                <a href="" class="footer_3_social_media"><i class="f4_icon  footer_3_social_media_icon fab fa-youtube"></i></a>
+            </div>
+        </div>
+        <div class="footer_3">
+            <div class="footer_3_left">
+                <p class="footer_3_topbar">Cara Pembayaran</p>
+                <div class="footer_4_img_container">
+                    <amp-img style="border-radius: 10px;" src="./3RajaSlotClone/assets/bank_col.jpg"
+                  width="150"
+                  height="50"
+                  alt="logo">
+                </amp-img>
+                <amp-img style="border-radius: 10px;" src="./3RajaSlotClone/assets/ewallet_col.webp"
+                  width="150"
+                  height="50"
+                  alt="logo">
+                </amp-img>
+                <amp-img style="border-radius: 10px;" src="./3RajaSlotClone/assets/cryptocurrency_col.webp"
+                  width="150"
+                  height="50"
+                  alt="logo">
+                </amp-img>
+                <amp-img style="border-radius: 10px;" src="./3RajaSlotClone/assets/pulsa_col.webp"
+                  width="150"
+                  height="50"
+                  alt="logo">
+                </amp-img>
+                </div>
+            </div>
+            <div class="footer_3_right">
+                <p class="footer_3_topbar">Browser yang Disarankan</p>
+                <amp-img src="./3RajaSlotClone/assets/supported_browser.png"
+                  width="120"
+                  height="40"
+                  alt="logo">
+                </amp-img>
+            </div>
+        </div>
+        <div class="footer_4">
+            <p class="footer_3_topbar">Cara Pembayaran</p>
+            <amp-img src="./3RajaSlotClone/assets/footer_provider_col.webp"
+              width="1500"
+              height="500"
+              layout="responsive"
+              alt="">
+            </amp-img>
+        </div>
+    </div>
   </div>
 </body>
 </html>
