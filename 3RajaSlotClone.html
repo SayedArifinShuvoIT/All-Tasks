@@ -44,6 +44,7 @@
         justify-content: center;
         align-items: center;
         gap: 5px;
+        flex-wrap: wrap;
         
        }
        .mobile_grediant {
@@ -423,6 +424,7 @@ ul,li{
 }
 .adrs__texts {
     text-align: center;
+    width: 100%;
 }
 .adrs_icon {
     font-size: 24px;
@@ -590,6 +592,9 @@ background-color: #38c0ff;
     }
 }
 @media (max-width: 600px) {
+    .adrs__texts  {
+        text-align: start;
+    }
     .info_container {
     grid-template-columns: repeat(1, 1fr);
 }
@@ -682,8 +687,10 @@ font-size: 1.3rem;
             <div class="divider"></div>
             <button class="navbar__right_bottom_button msg"><i class="fas fa-comment"></i></button>
             <div class="divider"></div>
-            <button class="login">Login</button>
+            <div class="">
+                <button class="login">Login</button>
             <button class="register">Daftar</button>
+            </div>
             
 
           </div>
@@ -1246,7 +1253,7 @@ font-size: 1.3rem;
                 <h4 class="secondary_heading">WITHDRAW</h4>
                 <p class="secondary_description">Waktu rata-rata</p>
             </div>
-            <h2 style="font-size: 35px;">1<span style="font-size: 10px;">Mins</span></h2>
+            <h2 style="font-size: 35px;">3<span style="font-size: 10px;">Mins</span></h2>
         </div>
     </div>
     <div class="progress">

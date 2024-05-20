@@ -875,9 +875,11 @@
   margin-top: 100px;
   max-width: 600px;
 }
-.swiper {
+.swiper,.swiper1,.swiper2,.swiper3,.swiper4 {
     width: 100%;
     margin-top: 50px;
+    overflow-x: hidden;
+    
   }
  
 .testimonial-box {
@@ -1101,7 +1103,7 @@
 .btn_2 {
     background-color: var(--theme-color2);
 }
-.swiper2 {
+.swiper5 {
     overflow-x: hidden;
 }
 

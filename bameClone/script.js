@@ -1,83 +1,146 @@
 document.addEventListener("DOMContentLoaded", function() {
-    let swiper; 
-
-    // Initialize Swiper
-    swiper = new Swiper('.swiper', {
+  // Initialize the first Swiper
+  const swiper1 = new Swiper('.swiper1', {
       direction: 'horizontal',
       loop: true,
       slidesPerView: 'auto',
       autoplay: {
-        delay: 1000,
-        disableOnInteraction: true,
+          delay: 1000,
+          disableOnInteraction: true,
       },
       pagination: {
-        el: '.swiper-pagination',
+          el: '.swiper-pagination',
       },
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
       },
       scrollbar: {
-        el: '.swiper-scrollbar',
+          el: '.swiper-scrollbar',
       },
       on: {
-        init: function() {
-          // Call updateActiveButton after swiper is initialized
-          updateActiveButton();
-        },
-        slideChange: function() {
-          updateActiveButton();
-        },
+          init: function() {
+              console.log("Swiper initialized");
+          },
       },
-    });
-    var swiper2 = new Swiper('.swiper2', {
+  });
+  const swiper2 = new Swiper('.swiper2', {
+    direction: 'horizontal',
+    loop: true,
+    slidesPerView: 'auto',
+    autoplay: {
+        delay: 1000,
+        disableOnInteraction: true,
+    },
+    pagination: {
+        el: '.swiper-pagination',
+    },
+    navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    scrollbar: {
+        el: '.swiper-scrollbar',
+    },
+    on: {
+        init: function() {
+            console.log("Swiper initialized");
+        },
+    },
+});
+const swiper3 = new Swiper('.swiper3', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 'auto',
+  autoplay: {
+      delay: 1000,
+      disableOnInteraction: true,
+  },
+  pagination: {
+      el: '.swiper-pagination',
+  },
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  scrollbar: {
+      el: '.swiper-scrollbar',
+  },
+  on: {
+      init: function() {
+          console.log("Swiper initialized");
+      },
+  },
+});
+const swiper4 = new Swiper('.swiper4', {
+  direction: 'horizontal',
+  loop: true,
+  slidesPerView: 'auto',
+  autoplay: {
+      delay: 1000,
+      disableOnInteraction: true,
+  },
+  pagination: {
+      el: '.swiper-pagination',
+  },
+  navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+  },
+  scrollbar: {
+      el: '.swiper-scrollbar',
+  },
+  on: {
+      init: function() {
+          console.log("Swiper initialized");
+      },
+  },
+});
+
+  // Add event listeners for buttons
+  document.getElementById('goToSlide1').addEventListener('click', function () {
+      console.log('Go to Slide 1');
+      swiper1.slideToLoop(0);
+      swiper2.slideToLoop(0);
+      swiper3.slideToLoop(0);
+      swiper4.slideToLoop(0);
+  });
+
+  document.getElementById('goToSlide2').addEventListener('click', function () {
+      console.log('Go to Slide 2');
+      swiper1.slideToLoop(1);
+      swiper2.slideToLoop(1);
+      swiper3.slideToLoop(1);
+      swiper4.slideToLoop(1);
+  });
+
+  // Initialize the second Swiper
+  const swiper5 = new Swiper('.swiper5', {
       direction: 'horizontal',
       spaceBetween: 10,
       loop: true,
       autoplay: {
-        delay: 3000,
-        disableOnInteraction: true,
+          delay: 3000,
+          disableOnInteraction: true,
       },
       breakpoints: {
-        600: {
-          slidesPerView: 1,
-          spaceBetween: 10
-        },
-        991: {
-          slidesPerView: 2,
-          spaceBetween: 20
-        },
-       1280: {
-        slidesPerView: 3,
-          spaceBetween: 20
-       }
-      }
-    });
-  
-
-    var slideButtons = document.querySelectorAll('.custom-slide-button');
-    slideButtons.forEach(function(button) {
-      button.addEventListener('click', function() {
-        var slideIndex = parseInt(button.getAttribute('data-slide-index'));
-        swiper.slideToLoop(slideIndex); // Navigate to corresponding slide
-      });
-    });
-
-    function updateActiveButton() {
-      // Ensure swiper is defined before accessing its properties
-      if (swiper && swiper.realIndex !== undefined) {
-        var activeIndex = swiper.realIndex; // Use realIndex instead of activeIndex
-        slideButtons.forEach(function(button, index) {
-          if (index === activeIndex) {
-            button.classList.add('slider_active');
-          } else {
-            button.classList.remove('slider_active');
+          600: {
+              slidesPerView: 1,
+              spaceBetween: 10
+          },
+          991: {
+              slidesPerView: 2,
+              spaceBetween: 20
+          },
+          1280: {
+              slidesPerView: 3,
+              spaceBetween: 20
           }
-        });
       }
-    }
   });
-  
+});
+
+
   document.addEventListener("DOMContentLoaded", function() {
     const slider = document.querySelector(".slider");
     let slideIndex = 0;
