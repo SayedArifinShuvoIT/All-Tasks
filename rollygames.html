@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html amp lang="en">
+<head>
+   
+   
+        <meta charset="utf-8">
+        <script async src="https://cdn.ampproject.org/v0.js"></script>
+        <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
+        <title>Lux88togel - Situs Slot Gacor Terpercaya</title>
+        <link rel="canonical" href="https://amp.dev/documentation/guides-and-tutorials/start/create/basic_markup/">
+        <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
+        <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
+        <style amp-custom>
+           
+           .container {
+            max-width: 991px;
+            margin: 0 auto;
+            padding: 0 16px;
+           }
+
+           .black__color {
+            background-color: #1d1d1d;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            z-index: 9999999999999999999999999999;
+           }
+           .navbar {
+            background-color: #1d1d1d;
+            text-align: center;
+            padding: 10px;
+            
+           }
+           .text {
+            height: 200vh;
+           }
+           .slider {
+            margin-top: 70px;
+           }
+           .buttons {
+            display: flex;
+            gap: 20px;
+            margin-top: 20px;
+           }
+           .animated_button1,.animated_button2 {
+flex:1;
+text-transform: uppercase;
+padding: 15px 0;
+border-radius: 10px;
+font-weight: 900px;
+color: #fff;
+background-color: #000;
+border-top: 2px solid #aca9a9;
+cursor: pointer;
+font-size: 20px;
+transition: 1s;
+           }
+           .animated_button1:hover,.animated_button2:hover {
+            background-color: #1d1d1d;
+           }
+           .content__container {
+            background-color: black;
+           }
+           .gray_bg {
+            background-color: #444;
+            padding: 10px 0;
+           }
+           .glowing_text {
+            color: #444;
+            padding: 20px 10px 0;
+           }
+           .table_row {
+            width: 100%;
+            display: flex;
+            border-bottom: 1px solid #444;
+           }
+           .table_data {
+            color: #fff;
+            padding: 5px;
+            flex: 1;
+            
+           }
+           .text_gray {
+            color: #8a8a8a;
+            font-weight: 700;
+           }
+           .table_body {
+            border: 1px solid #444;
+           }
+           .right_border {
+            border-left: 1px solid #444;
+           }
+           .desc_section {
+            color: #fff;
+            font-size: 14px;
+            padding: 20px;
+           }
+           .footer__section {
+            margin-top: 20px;
+            margin-bottom: 100px;
+            text-align: center;
+           }
+           .footer__text {
+        color: #ffff;
+        font-weight: 600;
+        margin: 5px;
+           }
+           .bottom_menu {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+           }
+           .bottom_menu {
+            background-color: #1d1d1d;
+            padding: 10px 0;
+           }
+           .menu {
+            text-align: center;
+           }
+           .menu__text {
+            margin: 5px;
+            color: #fff;
+            font-size: 12px;
+           }
+           .button_one-animation {
+  position: relative;
+  display: inline-block;
+  padding: 20px 30px;
+  color: #fff;
+  text-transform: uppercase;
+  overflow: hidden;
+  letter-spacing: 4px;
+  transition: 0.5s;
+  background-color: #000;
+  flex: 1;
+  text-decoration: none;
+}
+
+.button_one-animation span {
+  position: absolute;
+  display: block;
+}
+
+.button_one-animation span:nth-child(1) {
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #fff);
+  animation: btn-anim1 1s linear infinite;
+}
+
+@keyframes btn-anim1 {
+  0% {
+    left: -100%;
+  }
+  50%,
+  100% {
+    left: 100%;
+  }
+}
+@keyframes AnimateColor {
+  0% {
+    transform: scaleX(0);
+    transform-origin: right;
+  }
+  100% {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  }
+.button_one {
+    flex: 1;
+    position: relative;
+}
+
+.button_one-animation {
+    width: 90%;
+    text-align: center;
+    border-radius: 10px;
+    
+}
+.button_one-animation span:nth-child(2) {
+  top: -100%;
+  right: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(180deg, transparent, #fff);
+  animation: btn-anim2 1s linear infinite;
+  animation-delay: 0.25s;
+}
+
+@keyframes btn-anim2 {
+  0% {
+    top: -100%;
+  }
+  50%,
+  100% {
+    top: 100%;
+  }
+}
+
+.button_one-animation span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #fff);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: 0.5s;
+}
+
+@keyframes btn-anim3 {
+  0% {
+    right: -100%;
+  }
+  50%,
+  100% {
+    right: 100%;
+  }
+}
+
+.button_one-animation span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #fff);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: 0.75s;
+}
+
+@keyframes btn-anim4 {
+  0% {
+    bottom: -100%;
+  }
+  50%,
+  100% {
+    bottom: 100%;
+  }
+}
+
+.button_one-animation:hover {
+  background-color: #949292;
+  color: var(--white-color);
+  border-radius: 5px;
+  box-shadow: var(--box-shadow);
+}
+.white_bg {
+    background-color: rgba(255, 255, 255, 0.436);
+    position: absolute;
+top: 0;
+    width: 100%;
+    height: 100%;
+    animation: AnimateColor 1s infinite;
+  transition: transform 2s ease;
+}
+.glowing_text {
+    animation: btn-text 1s infinite;
+  transition: transform 2s ease;
+}
+@keyframes btn-text {
+  0% {
+    -webkit-text-stroke: none;
+    text-shadow: none;
+  }
+  50%{
+    -webkit-text-stroke: 1px #fff;
+    text-shadow: 0 0 15px #fff;
+  }
+  100% {
+    -webkit-text-stroke: none;
+    text-shadow: none;
+  }
+}
+          </style>
+      
+</head>
+<body>
+    <div class="black__color">
+        <div class="container navbar">
+            <amp-img src="./rollygames/download.png"
+              width="150"
+              height="35" 
+              alt="logo">
+            </amp-img>
+        </div>
+    </div>
+    <div class="gray_bg">
+        <div  class="slider">
+            <amp-carousel width="450" height="140" layout="responsive" type="slides" autoplay delay="2000" role="region" aria-label="Carousel with autoplay">
+                <amp-img src="./rollygames/lux88.png" width="400" height="300" layout="responsive" alt="a sample image"></amp-img>
+                <amp-img src="./rollygames/lux88gacor.jpg" width="400" height="300" layout="responsive" alt="another sample image"></amp-img>
+                <amp-img src="./rollygames/lux88togel-gacor.png" width="400" height="300" layout="responsive" alt="and another sample image"></amp-img>
+              </amp-carousel>
+        </div>
+        <div class="buttons container">
+            <div class="button_one ">
+                <a class="box__link button_one-animation " href="#">
+                  dafter
+                  <span class=""></span>
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <span class="white_bg"></span>
+                </a>
+              </div>
+            <button class="animated_button2">Masuk</button>
+        </div>
+    
+        <div class="content__container container">
+            <p class="glowing_text">lux88togel</p>
+      
+                <div class="table_body">
+                    <div class="table_row">
+                        <div class="table_data text_gray">Minimal Deposit Slot Gacor</div>
+                        <div class="table_data right_border">✅ Termurah</div>
+                    </div>
+                    <div class="table_row">
+                        <div class="table_data text_gray">Minimal Penarikan</div>
+                        <div class="table_data right_border">✅ Termurah</div>
+                    </div>
+                    <div class="table_row">
+                        <div class="table_data text_gray">Proses Transaksi</div>
+                        <div class="table_data right_border">✅ ± 3 Menit</div>
+                    </div>
+                    <div class="table_row">
+                        <div class="table_data text_gray">Metode Deposit</div>
+                        <div class="table_data right_border">✅ Transfer Bank, E-Wallet & Pulsa</div>
+                    </div>
+                    <div class="table_row">
+                        <div class="table_data text_gray">Slot Tergacor</div>
+                        <div class="table_data right_border">✅ Gates of Olympus, Starlight, Bonanza</div>
+                    </div>
+
+                </div>
+                <div class="desc_section">
+                    <p class="desc"><a href="#" class="desc_a">Lux88togel</a> adalah situs web yang mengiklankan dirinya sebagai platform perjudian online. Menawarkan permainan slot dan lotere, menjanjikan tingkat kemenangan tinggi dan kemenangan mudah.Kami menyediakan cara alternatif login LUX88Togel link. Di sini Anda dapat menemukan tautan lux88togel.</p>
+                    <p class="desc">Lux88togel adalah <a href="#" class="desc_a">Situs Slot Gacor</a> yang sudah terpercaya sejak dulu dan sudah banyak ratusan member aktif sampai sekarang
+                        jika ingin bergabung pastinya kamu harus daftar terlebih dahulu dengan menggunakan rekening yang valid dan pastinya
+                        kamu bisa dibantu oleh customer servise kami yang bersedia online 24 jam agar kami bisa membantu kapan saja
+                        bahkan kami juga tersedia banyak bonus salah satunya adalah bonus khusus new member yang mau gabung bersama kami
+                        dan tersedia bonus bonus lainnya seperti bonus next deposit,bonus rolinggan,bonus live casino dan masih banyak lagi lainnya.</p>
+                    <p class="desc">Lux88togel ADALAH Agen Slot Terbesar yang memiliki banyak peluang menang setiap hari
+                        ditempat kami tersedia banyak promo new member 50% khusus untuk pendatang baru langsung
+                        disinilah <a href="#" class="desc_a">Lux88togel menyediakan</a> deposit seperti bank, ewallet, dan pulsa tanpa potongan dengan rate 100%
+                        agar member selalu mendapatkan promo promo menarik dari Lux88togel, untuk member setia kami
+                        juga mendapatkan bonus next depoit setiap hari dan masih banyak promo lainnya.</p>
+                    <p class="desc">Lux88togel ADALAH Slot Gacor yang terbaik di <a href="#" class="desc_a">indonesia </a> dengan tersedia banyak permainan gacor seperti
+                        slot online, live casino, spade gaming ,togel,pg soft, joker gaming, habanero, tembak ikan, sabung ayam
+                        domino qq dan masih banyak permainan lagi
+                        kami selalu memberikan update jika tersedia game baru agar member Lux88togel kami merasa puas dan tidak mudah bosan
+                        daftar sekarang juga di Lux88togel dan ajak teman teman semua gabung bersama kami dan nikmati keuntungan disini.</p>
+                        <p class="desc">Lux88togel adalah Bandar Judi Online yang terbaik dan terpercaya diseluruh Indonesia
+                            ditempat kami sudah tersedia berbagai permainan yang sudah di mainkan oleh ratusan member
+                            sampai sekarang dengan <a href="#">kemenangan presentase</a> yang sangat tinggi bahkan tersedia rtp berkualitas
+                            yang sangat akurat untuk semua member kami yang hadir, bahkan kami mempunyai pelayana 24 jam
+                            yang sopan dan ramah bagi seluruh member yang bisa datang kapan saja dengan siap memberikan pelayanan untuk semua
+                            bagi member yang mempunya keluhan ataupun masalah.</p>
+                            <p class="desc">Lux88togel adalah Agen Judi Slot Online yang sudah tersedia berbagai metode deposit yaitu bank, ewallet, dan pulsa
+                                jika sudah mencari <a href="#">situsnya silahkan</a> mencari halaman utama langsung dan jangan memilih akhir karena bisa jadi palsu
+                                di tempat kami terdapat rtp kualitas tinggi dan memudahkan member untuk menang disemua permainan yang ada di Lux88togel
+                                kamu juga bisa mendapatkan banyak promo promo bagus disini dan jangan lupa untuk mengajak teman kamu bergabung bersama kami
+                                dan bisa dapatkan referal.</p>
+                </div>
+                
+           
+        </div>
+        <div class="footer__section container">
+            <amp-img src="./rollygames/logoweb lux88.png"
+              width="250"
+              height="70"
+             
+              alt="">
+            </amp-img>
+            <h4 class="footer__text">Copyright lux88togel © 2023</h4>
+        </div>
+    </div>
+    <div class="bottom_menu">
+        <div class="menu">
+            <amp-img src="./rollygames/apk.jpg"
+              width="30"
+              height="30"
+              alt="">
+            </amp-img>
+            <p class="menu__text">Beranda</p>
+        </div>
+        <div class="menu">
+            <amp-img src="./rollygames/whatsapp.gif"
+              width="30"
+              height="30"
+              alt="">
+            </amp-img>
+            <p class="menu__text">Whatsapp</p>
+        </div>
+        <div class="menu">
+            <amp-img src="./rollygames/rtpslot.gif"
+              width="30"
+              height="30"
+              alt="">
+            </amp-img>
+            <p class="menu__text">Daftar</p>
+        </div>
+        <div class="menu">
+            <amp-img src="./rollygames/telegram.gif"
+              width="30"
+              height="30"
+              alt="">
+            </amp-img>
+            <p class="menu__text">telegram</p>
+        </div>
+        <div class="menu">
+            <amp-img src="./rollygames/lux88 (1).png"
+              width="30"
+              height="30"
+              alt="">
+            </amp-img>
+            <p class="menu__text">Live Chat</p>
+        </div>
+    </div>
+    
+</body>
+</html>
