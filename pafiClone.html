@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pafi</title>
+    <link rel="stylesheet" href="./pafi/assets/home.css">
+    <link rel="shortcut icon" href="./pafi/assets/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <iframe style="width: 100%; min-height: 400px; position: absolute; top: 0;" src="./pafi/components/navbar.html" frameborder="0" scrolling="no"></iframe>
+<div class="main_content">
+    
+        <div class="heading_bg">
+            <h1 class="main_heading">WEB PAFI TERINTEGRASI</h1>
+        </div>
+        <div class="container">
+        <div class="swiper">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+              <!-- Slides -->
+              <div class="swiper-slide">
+                <div class="sild_container">
+                    <div class="sild_overlay"></div>
+                    <div class="slide_one">
+                        <h1 class="slider_one_heading">PAFI PUSAT</h1>
+                        <p class="slider_one_link">pafi.id</p>
+                    </div>
+                </div>
+              </div>
+              <div class="swiper-slide"><div class="sild_container">
+                <div class="sild_overlay"></div>
+            </div></div>
+              <div class="swiper-slide"><div class="sild_container">
+                <div class="sild_overlay"></div>
+            </div></div>
+            </div>
+            <!-- If we need pagination -->
+            <div class="swiper-pagination"></div>
+          
+            <!-- If we need navigation buttons -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        
+          </div>
+    </div>
+</div>
+    <iframe style="width: 100%; min-height: 400px;" src="./pafi/components/footer.html" frameborder="0" scrolling="no"></iframe>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'horizontal',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+    </script>
+</body>
+</html>

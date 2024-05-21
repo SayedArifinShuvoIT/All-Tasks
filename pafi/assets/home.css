@@ -1,0 +1,71 @@
+* {
+    font-family: "Rubik", sans-serif;
+    padding: 0;
+    margin: 0;
+}
+.main_content {
+
+    margin-top: 70px;
+}
+
+.container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+.main_heading {
+    font-size: 3rem;
+    text-align: center;
+    padding: 30px;
+    color: #363535;
+    background-color: #efefef;
+}
+.swiper {
+    margin: 20px;
+}
+
+.sild_container {
+   height: 500px;
+    background-image: url('./bgktan.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* .sild_overlay {
+    width: 100%;
+    height: 500px;
+    background-color: #1e00fffb;
+    opacity: .8;
+} */
+.slide_one {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    height: 100%;
+    flex-direction: column;
+    padding: 0 40px;
+    background-color: #1e00fffb;
+    opacity: .8;
+
+}
+
+.slider_one_heading {
+    font-size: 3rem;
+    font-weight: 300;
+    color: #fff;
+}
+.slider_one_link {
+    color: red;
+}
+@media (max-width: 500px) {
+    .main_heading {
+        font-size: 2rem;
+    }
+    .slide_one {
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .slider_one_heading {
+        font-size: 1.8rem;
+    }
+}
