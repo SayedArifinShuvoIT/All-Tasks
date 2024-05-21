@@ -150,7 +150,7 @@ transition: 1s;
   width: 100%;
   height: 2px;
   background: linear-gradient(90deg, transparent, #fff);
-  animation: btn-anim1 1s linear infinite;
+  animation: btn-anim1 2s linear infinite;
 }
 
 @keyframes btn-anim1 {
@@ -164,12 +164,11 @@ transition: 1s;
 }
 @keyframes AnimateColor {
   0% {
-    transform: scaleX(0);
-    transform-origin: right;
+   
+   transform: translateX(100%);
   }
   100% {
-    transform: scaleX(1);
-    transform-origin: left;
+    transform: translateX(-100%);
   }
   }
 .button_one {
@@ -189,8 +188,8 @@ transition: 1s;
   width: 2px;
   height: 100%;
   background: linear-gradient(180deg, transparent, #fff);
-  animation: btn-anim2 1s linear infinite;
-  animation-delay: 0.25s;
+  animation: btn-anim2 2s linear infinite;
+  animation-delay: 0.5s;
 }
 
 @keyframes btn-anim2 {
@@ -209,8 +208,8 @@ transition: 1s;
   width: 100%;
   height: 2px;
   background: linear-gradient(270deg, transparent, #fff);
-  animation: btn-anim3 1s linear infinite;
-  animation-delay: 0.5s;
+  animation: btn-anim3 2s linear infinite;
+  animation-delay: 1s;
 }
 
 @keyframes btn-anim3 {
@@ -229,8 +228,8 @@ transition: 1s;
   width: 2px;
   height: 100%;
   background: linear-gradient(360deg, transparent, #fff);
-  animation: btn-anim4 1s linear infinite;
-  animation-delay: 0.75s;
+  animation: btn-anim4 2s linear infinite;
+  animation-delay: 1.5s;
 }
 
 @keyframes btn-anim4 {
@@ -250,13 +249,15 @@ transition: 1s;
   box-shadow: var(--box-shadow);
 }
 .white_bg {
-    background-color: rgba(255, 255, 255, 0.436);
-    position: absolute;
-top: 0;
+  
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
-    animation: AnimateColor 1s infinite;
-  transition: transform 2s ease;
+    background: linear-gradient(to left, rgba(43, 8, 8, 0), #fff);
+    animation: 2s AnimateColor linear infinite;
+    z-index: 99999;
+
 }
 .glowing_text {
     animation: btn-text 1s infinite;
