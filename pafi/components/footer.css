@@ -5,8 +5,6 @@
 }
 
 .footer__container {
-    position: sticky;
-    bottom: 0;
     background-color: #3041ae;
     min-height: 300px;
 }
@@ -22,9 +20,7 @@
     justify-content: space-between;
     align-items: start;
     gap: 20px;
-   
     padding-top: 20px;
-    margin: 30px;
     border-bottom: 1px solid #4554b9;
 }
 .footer__section_1,.footer__section_2,.footer__section_3,.footer__section_4 {
@@ -58,7 +54,7 @@
 .footer__bottom {
     display: flex;
     justify-content: space-between;
-
+    padding-top: 20px;
     align-items: start;
     color: #fff;
     margin: 0 50px;
