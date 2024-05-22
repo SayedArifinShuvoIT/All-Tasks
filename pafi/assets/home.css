@@ -2,6 +2,7 @@
     font-family: "Rubik", sans-serif;
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 .main_content {
     margin-top: 50px;
@@ -47,7 +48,25 @@
     opacity: .8;
 
 }
-
+.bk2topbtn {
+    font-size: 30px;
+    padding: 12px 15px;
+    background-color: #7b7b7d77;
+    border-radius: 50%;
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    color: #fff;
+    display: none;
+    transition: all .5s;
+    cursor: pointer;
+    &:hover {
+        background-color: #767676;
+    }
+}
+.visible {
+    display: block;
+}
 .slider_one_heading {
     font-size: 3rem;
     font-weight: 300;
@@ -72,6 +91,11 @@
 }
 .sidebar_list_li {
     cursor: pointer;
+}
+.footer_4_ancore {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
 }
 .login__container {
 background-image: url(./background1.jpg);
@@ -265,6 +289,11 @@ background-size: cover;
     margin: 0 auto;
     padding: 0 20px;
 }
+.withpadding3_container {
+    max-width: 750px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
 .button__container {
     margin-top: 80px;
     padding: 100px 0;
@@ -311,7 +340,7 @@ background-size: cover;
     color: #565656;
     line-height: 1.43;
     min-height: 2em;
-    padding: .9em .5em;
+    padding: .6em .5em;
     outline:none;
     border: 1px solid #edecec;
     font-size: 1rem;
@@ -323,7 +352,7 @@ background-size: cover;
     box-shadow: none;
     color: #fff;
     line-height: 1.43;
-    padding: .9em .5em;
+    padding: .6em .5em;
     font-size: 1.1rem;
 
     transition:  1s;
@@ -332,10 +361,10 @@ background-size: cover;
     }
 }
 th, td {
-    padding: 15px 5px;
+    padding: 15px 20px;
     text-align: left;
     border-top: 1px solid #dee2e6;
-    line-height: 30px;
+    line-height: 15pxpx;
 }
 
 .table_ancore {
