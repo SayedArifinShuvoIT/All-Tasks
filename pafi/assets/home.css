@@ -6,7 +6,6 @@
     scroll-behavior: smooth;
 }
 .main_content {
-    margin-top: 50px;
     padding-top: 20px;
     
 }
@@ -222,7 +221,7 @@
 }
 
 .big_heading {
-    margin-top: 150px;
+    margin-top: 100px;
     font-size: 1.5rem;
 }
 
@@ -341,7 +340,6 @@
     padding: 0 20px;
 }
 .button__container {
-    margin-top: 80px;
     padding: 100px 0;
 }
 .bantuan_button_one,.bantuan_button_two {
