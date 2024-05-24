@@ -69,22 +69,42 @@
     display: flex;
     gap: 20px;
 }
-.login_button {
+.gred_button {
     background: linear-gradient(to bottom,#71BEF5 0%,#289AD8 65%,#0087C9 100%);
     border: none;
     font-size: 20px;
-    font-family: "Joti One",sans-serif;
     width: 120px;
     height: 36px;
     border-radius: 10px;
     box-shadow: 0 0 5px #71BEF5;
     transition: 1s;
+    position: relative;
   
 
 }
-.login_button:hover {
-    background: linear-gradient(to bottom,#ED1717 0%,#870D0D 100%);
+.gred_button::after {
+    content: " ";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background: linear-gradient(to bottom,#ED1717 0%,#870D0D 100%);
     box-shadow: 0 0 5px #870D0D;
+      position: absolute; 
+      opacity: 0;
+      transition: all 1s ease;
+      border-radius: 10px;
+}
+
+.gred_button:hover::after {
+    opacity: 1;
+}
+
+.btn_text {
+    z-index: 100;
+    position: relative;
+    opacity: 1;
+    font-family: "Joti One",sans-serif;
 }
 .main_menu {
     display: flex;
@@ -268,13 +288,33 @@
     box-shadow: 0 0 5px #F90000;
     padding: 5px 15px;
     font-size: 12px;
+    border-radius: 5px;
     font-weight: 500;
     transition: all .5s;
-    &:hover {
-        background-image: linear-gradient(to bottom, #000000 0%, #000000 100%);
-    }
+    position: relative;
+}
+.red_btn::after {
+    content: " ";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black; 
+    position: absolute; 
+    opacity: 0;
+    transition: all 1s ease;
+    border-radius: 5px;
+
+}
+.txt {
+    z-index: 100;
+    position: relative;
+    opacity: 1;
 }
 
+.red_btn:hover::after {
+    opacity: 1;
+}
 .red_btn_container {
     display: flex;
     gap: 20px;
@@ -302,7 +342,7 @@
 .grediant_border {
     border-radius: 0 0 10px 10px;
     border: 2px solid #FFC700;
-    height: 100%;
+    height: 90%;
     border-top: none;
     border-image-slice: 1;
     border-image-source: linear-gradient(to bottom, #ffdf0c00 0%, #FFDF0C 50%, #FFDF0C 100%);
@@ -368,6 +408,7 @@
     font-size: 16px;
     font-weight: 500;
     margin-bottom: 10px;
+    transition: all .5s ease;
     &:hover {
         color: #289AD8;
     }
@@ -379,6 +420,11 @@
 }
 .footer_social_img {
     width: 50px;
+    cursor: pointer;
+    transition: all .5s ease-in;
+}
+.footer_social_img:hover {
+transform: scale(1.2);
 }
 
 .footer__bottom_text {
@@ -432,7 +478,12 @@
     
 }
 
+@media only screen and (max-width: 1200px){
+    .hero__slider {
+        padding: 0 0;
+    }
 
+}
 @media only screen and (max-width: 991px) {
     .grediant_border{
         height: max-content;
@@ -531,4 +582,9 @@
     .provider_img3 {
         width: 100%;
     }
+    .heading_with_bg {
+        font-size: 24px;
+        font-weight: 300;
+    }
 }
+

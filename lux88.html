@@ -34,8 +34,8 @@
                 <div class="lang_border"></div>
             </div>
             <div class="login_div">
-                <button class="login_button">Login</button>
-                <button class="login_button">Register</button>
+                <button class="gred_button"><span class="btn_text">Login</span></button>
+                <button class="gred_button"><span class="btn_text">Register</span></button>
             </div>
           </div>
     
@@ -167,9 +167,9 @@
       </div>
       <div class="pc_container padding_top">
         <div class="red_btn_container">
-          <button class="red_btn">About</button>
-          <button class="red_btn">Contact Us</button>
-          <button class="red_btn">Info Center</button>
+          <button class="red_btn"><span class="txt">About</span></button>
+          <button class="red_btn"><span class="txt">Contact Us</span></button>
+          <button class="red_btn"><span class="txt">Info Center</span></button>
         </div>
         <div class="desc_section padding_top wow fadeInLeft">
           <div class="desc_card">
@@ -312,13 +312,13 @@
         </div>
       </div>
   </div>
-  <div class="footer_top_section wow fadeInUp">
+  <div class="footer_top_section ">
     <div class="pc_container footer_top_div">
-      <div class="footer_top_right">
+      <div class="footer_top_right wow fadeInUp">
         <img src="./lux88/assets/site_logo.png" alt="" class="footer_img">
        <p class="footer_top_right_desc">Lux88Togel is a premier online gaming platform offering a wide range of slot games for enthusiasts. Known for its user-friendly interface and diverse game selection. Lux88slot provides an exciting and secure environment for players. It is enjoyable to the latest in slot entertainment. Enjoy top-notch graphics and generous bonuses today!</p>
       </div>
-    <div class="footer_top_left">
+    <div class="footer_top_left wow fadeInUp">
       <div class="footer_top_left_menu">
         <h5 class="mobile_nav_heading">Our Pages:</h5>
         <a href="#" class="footer_top_left_menu_ancore">ABOUT</a>
@@ -355,7 +355,9 @@
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    autoplay:true,
+    autoplay: {
+      delay: 500, 
+    },
     breakpoints: {
     // when window width is >= 320px
     450: {
@@ -382,7 +384,9 @@
     // Optional parameters
     direction: 'horizontal',
     loop: true,
-    autoplay:true,
+    autoplay: {
+      delay: 500, 
+    },
     slidesPerView: 3,
     spaceBetween: 10
 

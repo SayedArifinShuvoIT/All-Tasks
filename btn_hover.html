@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .button {
+      padding: 20px;
+      font-size: 24px;
+      text-decoration: none;
+      background-image: linear-gradient(to right,red 0%,black 50%);
+      color: white;
+      position: relative;
+      
+    }
+    .button::after {
+      content: " ";
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: red; 
+      position: absolute; 
+      opacity: 0;
+      transition: all 1s ease; /* Apply transition here */
+    }
+    .button:hover::after {
+      opacity: 1;
+    }
+    .btn_text {
+      z-index: 100;
+      position: relative;
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <a class="button" href="#"><span class="btn_text">Gradient Button</span></a>
+</body>
+</html>
