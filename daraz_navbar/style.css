@@ -1,0 +1,39 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  
+   
+    font-family: "Roboto", sans-serif;
+    font-size: 13px;
+}
+
+.sidebar__container {
+    max-width: 1180px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+.category__div {
+    background-color: #fff;
+    padding: 10px 0px;
+    border-radius: 10px;
+    width: fit-content;
+    
+}
+
+.ul_list {
+    list-style: none;
+    width: fit-content;
+}
+.li_list {
+ min-width: 187px;
+ line-height: 27px;
+ padding: 0 5px;
+ &:hover {
+    background-color: #767676;
+    color: orangered;
+ }
+}
+.li_icon {
+    width: 20px;
+}
