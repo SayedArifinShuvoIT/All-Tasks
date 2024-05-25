@@ -7,6 +7,12 @@
     font-family: "Roboto", sans-serif;
     font-size: 13px;
 }
+.navbar__container {
+    max-width: 1180px;
+    margin: 0 auto;
+    position: relative;
+    color: #fff;
+}
 
 .sidebar__container {
     max-width: 1180px;
@@ -42,8 +48,9 @@
         width: 30px;
         height: 100%;
         background-color: #f5f5f5;
-       
+        transition: all .5s ease;
     }
+    
     
     &:hover {
         border-right: 2px solid #d5d1d1;
@@ -124,11 +131,12 @@ background-color: transparent;
 .cosub {
     position: absolute;
     top: 0;
-    right: -688px;
+    right: -685px;
    display: none;
    cursor: pointer;
    list-style: none;
    max-width: 685px;
+   border-left: 1px solid #757575;
   
 }
 
@@ -185,4 +193,194 @@ background-color: transparent;
     height: 90%;
     width: 100%;
     
+}
+.daraz_navbar_container {
+    background-color: orangered;
+}
+.top__navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.top__navbar_right {
+    display: flex;
+    gap: 25px;
+    padding: 5px 0;
+}
+
+.top__navbar_right_ancore {
+    font-size: 12px;
+    text-decoration: none;
+    color: #fff;
+    transition: all .5s ease;
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.nav_submenu {
+    display: flex;
+    opacity: 0;
+    width: fit-content;
+    background-color: #fff;
+    flex-direction: column;
+    position: absolute;
+    width: max-content;
+    z-index: 999999;
+    top: 20px;
+    border-radius: 5px;
+    border: 1px solid #656565;
+    transition: all .5s;
+    height: 0;
+    overflow: hidden;
+
+}
+
+.nav_dropdown{
+    position: relative;
+    transition: all 1s ease;
+}
+.nav_dropdown:hover .nav_submenu{
+  opacity: 1;
+  height: fit-content;
+  padding: 20px;
+}
+
+.nav_submenu_ancore {
+    color: #656565;
+    text-decoration: none;
+    padding: 10px;
+    transition: all .5s ease;
+    
+}
+
+.top__navbar_sub_text {
+    color: #656565;
+    transition: all .5s ease-in-out;
+    &:hover {
+        color: orangered;
+        border-bottom: 1px solid orangered;
+    }
+
+}
+
+.nav_sub_icon {
+    font-size: 20px;
+    margin-right: 20px;
+}
+
+/* .nav_submenu::before {
+    content: " a";
+    display: block;
+    
+    text-align: center;
+    position: relative;
+    top: -33px;
+    width: 5px;
+   
+} */
+
+.top__navbar_left_ancore_img {
+    width: 20px;
+}
+
+.top__navbar_left_ancore {
+    font-size: 12px;
+    text-decoration: none;
+    color:#fff;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px;
+    background: rgba(0,0,0,.3);
+    border-radius: 0 0 5px 5px;
+    &:hover {
+        opacity: .8;
+    }
+    
+}
+
+.main_logo {
+    width: 120px;
+}
+
+.bottom_navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 10px;
+}
+.searchbar {
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    padding: 5px;
+}
+
+.search__input {
+    flex: 1;
+    padding: 5px;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+}
+
+.search_btn {
+    padding: 5px 15px;
+    border-radius: 10px;
+    border: none;
+    color: orangered;
+    background-color: rgba(255, 68, 0, 0.208);
+  
+}
+
+.login_container {
+    display: flex;
+    gap: 10px;
+    text-decoration: none;
+    align-items: center;
+
+}
+
+.login_container_btn {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    font-size: 12.5px;
+    padding: 10px  20px ;
+    border-radius: 10px;
+    transition: all .5s ease;
+    &:hover{
+        background-color:rgba(126, 126, 126, 0.43);
+    }
+}
+
+.border {
+    width: 1px;
+    height: 20px;
+    background-color: #fff;
+}
+
+.languadge_option {
+    font-weight: 700;
+    font-size: 12.5px;
+    transition: all .5s ease;
+    cursor: pointer;
+    transition: all .5s ease;
+    &:hover {
+        opacity: .8;
+    }
+}
+
+.cart__icon {
+    font-size: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: all .5s ease-in-out;
+    &:hover {
+        opacity: .8;
+    }
 }
