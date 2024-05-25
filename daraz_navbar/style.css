@@ -334,6 +334,7 @@ background-color: transparent;
     border: none;
     color: orangered;
     background-color: rgba(255, 68, 0, 0.208);
+    cursor: pointer;
   
 }
 
