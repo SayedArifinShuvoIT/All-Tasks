@@ -1,0 +1,85 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", sans-serif;
+}
+
+.conatiner {
+    max-width: 1196px;
+    padding: 0 16px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+
+}
+
+.background {
+    background-image: url(./assets/login-bg.png);
+    background-position: top;
+    background-repeat: no repeat;
+    background-size: cover;
+}
+.border {
+    border: 2px solid;
+}
+
+.white__card {
+    background-color: #fff;
+    padding: 50px 42px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 40px;
+    border-radius: 0 0 0 40px;
+    transition: all .5s;
+    &:hover {
+        border-radius: 0 20px 0 20px;
+    }
+
+}
+
+.white_card_logo {
+    width: 289px;
+}
+.input_div {
+    background-color: #fff;
+    display: flex;
+    gap: 5px;
+    align-items: center;
+    border-bottom: 1px solid #00000066;
+
+
+}
+
+.main__input {
+    flex: 1;
+    border: none;
+    outline: none;
+    padding: 15px 0;
+    color: #00000066;
+}
+.input_icon {
+    color: #00000066;
+}
+
+.submit__button {
+    padding: 15px 5px;
+    font-size: 20px;
+    font-weight: 700;
+    border-radius: 0 0 0 20px;
+    background-color: black;
+    border-color: black;
+    color: white;
+    transition: all .5s ease;
+    &:hover {
+        background-color: #082431;
+        box-shadow: 0 0 15px #0000;
+        border-radius: 0 20px 0 20px;
+    }
+}
+
+.additional_text {
+    font-size: 12px;
+}
