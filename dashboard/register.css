@@ -194,7 +194,7 @@
 }
 .register_btn:before {
   --tilt: 1.2rem;
-  background: #fff;
+  background: #f1f1f1;
   -webkit-clip-path: polygon(
     0 0,
     calc(100% - var(--tilt)) 0,

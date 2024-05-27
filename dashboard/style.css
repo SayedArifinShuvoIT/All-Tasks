@@ -60,6 +60,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    background-color: #b2b2b255;
 }
 
 .sidebar__collapsed .logo__container {
@@ -94,10 +95,12 @@
 .menu_title {
     font-size: 11px;
     line-height: 11px;
-    font-weight: 300;
+    font-weight: 600;
     letter-spacing: 1px;
     color: #082431;
     margin-bottom: 12px;
+    border-left: 2px solid #082431;
+    padding: 0 3px;
 }
 
 .menu_ancore ,.submenu__item {
@@ -112,6 +115,7 @@
     border-radius: 5px;
     display: flex;
     align-items: center;
+    position: relative;
     &:hover {
         background-color: #707fdd44;
         color: #5A6ACF;
@@ -197,7 +201,7 @@
     background-color: #F6F6FB;
     padding: 5px 10px;
     border-radius: 5px;
-    width: 55vw;
+    width: 30vw;
     display: flex;
 }
 
@@ -369,3 +373,5 @@
     }
   
 }
+
+
