@@ -101,7 +101,7 @@
     margin-bottom: 12px;
 }
 
-.menu_ancore {
+.menu_ancore ,.submenu__item {
     font-size: 12px;
     font-weight: 300;
     padding: 12px 20px;
@@ -118,6 +118,18 @@
         color: #5A6ACF;
         font-weight: 600;
     }
+}
+.submenu__item {
+    margin-left: 15px;
+    font-size: 10px;
+    &:hover {
+        background-color: #dd707044;
+        color: #cf5a5a;
+        font-weight: 500;
+    }
+}
+.menu_ancore_icon {
+    margin-right: 5px;
 }
 
 .sidebar__collapsed .menu_ancore {
@@ -306,4 +318,54 @@
 
 .sidebar__collapsed:hover ~ .main__content {
     margin-left: 245px;
+}
+
+.submenu {
+    position: relative;
+    cursor: pointer;
+    transition: all 1s ease-in;
+}
+
+.submenu__content {
+    display: none;
+    transition: all 1s ease-in;
+    
+}
+
+.submenu__toggle.active + .submenu__content {
+    display: block;
+}
+.submenu__toggle.active + .submenu__content .submenu_icon {
+    transform: rotate(180deg);
+}
+.submenu_icon {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    transition: all 1s ease;
+}
+.submenu_icon {
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    transition: transform 0.5s ease; /* Updated to only transition transform */
+}
+
+.sidebar__collapsed .submenu_icon {
+    display: none; /* Hide submenu icon when sidebar is collapsed */
+}
+
+.submenu__toggle.active + .submenu__content .submenu_icon {
+    transform: rotate(180deg); /* Rotate submenu icon when submenu is toggled open */
+}
+
+.submenu__content.active {
+    display: block; /* Show submenu content when submenu is toggled open */
+}
+.search_icon {
+    transition: all .5s;
+    &:hover{
+        color: red;
+    }
+  
 }

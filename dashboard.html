@@ -26,9 +26,18 @@
                     <a href="#" class="menu_ancore">
                         <i class="menu_ancore_icon fas fa-utensils"></i> <span>Food Order</span>
                     </a>
-                    <a href="#" class="menu_ancore">
-                        <i class="menu_ancore_icon fas fa-concierge-bell"></i> <span>Manage Menu</span>
-                    </a>
+                    <div class="submenu">
+                        <i class="submenu_icon fas fa-chevron-down dropdown-icon"></i>
+                        <a class="menu_ancore submenu__toggle">
+                            <i class="menu_ancore_icon fas fa-concierge-bell"></i> <span>Manage Order</span>
+                        </a>
+                        
+                        <div class="submenu__content">
+                            <!-- Submenu items go here -->
+                            <a href="#" class="submenu__item">Pending Orders</a>
+                            <a href="#" class="submenu__item">Completed Orders</a>
+                        </div>
+                    </div>
                     <a href="#" class="menu_ancore">
                         <i class="menu_ancore_icon fas fa-star"></i> <span>Customer Review</span>
                     </a>
@@ -56,8 +65,8 @@
     <div class="navbar__container">
         <a id="hamburger" class="hamburger__menu_close"><i class="fas fa-bars"></i></a>
         <div class="searchbar__div">
-            <input class="search__input" type="text" placeholder="Search">
-            <button class="search__btn"><i class="fa fa-search" aria-hidden="true"></i></button>
+            <input class="search__input" type="text" placeholder="Search" id="userInput">
+            <button onclick="showInputValue()" class="search__btn"><i class="fa fa-search search_icon" aria-hidden="true"></i></button>
         </div>
         <div class="navbar__right_div">
             <img class="profile_image" src="./dashboard/assets/Emoticon.png" alt="profile image">
@@ -76,9 +85,20 @@
        <a href="#" class="footer_btn"><i class="fa fa-cog" aria-hidden="true"></i></a>
        <a href="#" class="footer_btn"><i style="margin-right: 10px;" class="fas fa-sign-out-alt" aria-hidden="true"></i>Logout</a>
     </div>
-    <div class="main__content"><h5>Main Content Starts from here</h5></div>
+    <div class="main__content">
+        <h5>Main Content Starts from here</h5>
+        <p id="display"></p>
+    </div>
 
     <script>
+        const submenuToggles = document.querySelectorAll('.submenu__toggle');
+
+        submenuToggles.forEach(toggle => {
+            toggle.addEventListener('click', function() {
+                this.classList.toggle('active');
+            });
+        });
+
         const sidebar = document.getElementById('sidebar');
         const hamburger = document.getElementById('hamburger');
 
@@ -86,5 +106,22 @@
             sidebar.classList.toggle('sidebar__collapsed');
         });
     </script>
+    <script>
+        function showInputValue() {
+          var userInput = document.getElementById("userInput").value;
+          document.getElementById("display").innerText = "You typed: " + userInput;
+        }
+        
+        // Add event listener for "keypress" event on input field
+        document.getElementById("userInput").addEventListener("keypress", function(event) {
+          // Check if the pressed key is Enter (key code 13)
+          if (event.keyCode === 13) {
+            // Prevent the default action of the Enter key (form submission)
+            event.preventDefault();
+            // Call the function to show input value
+            showInputValue();
+          }
+        });
+        </script>
 </body>
 </html>
