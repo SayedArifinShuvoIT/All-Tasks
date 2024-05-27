@@ -238,7 +238,7 @@ background-color: transparent;
 
 .nav_dropdown{
     position: relative;
-    transition: all 1s ease;
+    transition: opacity 1s ease;
 }
 .nav_dropdown:hover .nav_submenu{
   opacity: 1;
