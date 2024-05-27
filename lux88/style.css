@@ -328,7 +328,6 @@
     flex: 1;
     max-width: 300px;
     min-width: 250px;
-    height: 100%;
 }
 .desc_section {
     display: flex;
@@ -352,12 +351,12 @@
    
 }
 .grediant_border {
-    height: max-content;
+
     border-radius: 0 0 10px 10px;
     border: 2px solid #FFC700;
     border-top: none;
     border-image-slice: 1;
-    border-image-source: linear-gradient(to bottom, #ffdf0c00 0%, #FFDF0C 50%, #FFDF0C 100%);
+    border-image-source: linear-gradient(to bottom, #ffdf0c00 5%, #FFDF0C 50%, #FFDF0C 100%);
 }
 .game__provider_heading {
     color: #00FFE0;

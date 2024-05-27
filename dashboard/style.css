@@ -171,7 +171,7 @@
 }
 
 .navbar__container {
-    position: sticky;
+    position: fixed;
     top: 0;
     background-color: #fff;
     margin-left: 240px;
@@ -191,7 +191,7 @@
     display: flex;
     justify-content: space-between;
     padding: 12px 40px 13px;
-    position: relative;
+    position: sticky;
 }
 
 .searchbar__div {
@@ -347,12 +347,13 @@
 .submenu_icon {
     position: absolute;
     right: 10px;
-    top: 14px;
-    transition: transform 0.5s ease; /* Updated to only transition transform */
+    top: 16px;
+    font-size: 12px;
+    transition: transform 0.5s ease;
 }
 
 .sidebar__collapsed .submenu_icon {
-    display: none; /* Hide submenu icon when sidebar is collapsed */
+    display: none;
 }
 
 .submenu__toggle.active + .submenu__content .submenu_icon {
