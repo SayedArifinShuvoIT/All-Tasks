@@ -53,7 +53,7 @@
     
     
     &:hover {
-        border-right: 2px solid #d5d1d1;
+        border-right: 1px solid rgb(213, 209, 209);
         border-radius: 10px 0 0 10px;
     }
     
@@ -75,7 +75,7 @@ background-color: transparent;
 .li_list {
  min-width: 220px;
  line-height: 27px;
- padding: 0 5px;
+ padding: 2px 15px;
  color: #757575;
  transition: all .5s ease;
  cursor: pointer;
@@ -136,7 +136,7 @@ background-color: transparent;
    cursor: pointer;
    list-style: none;
    max-width: 685px;
-   border-left: 1px solid #757575;
+   border-left: 1px solid rgb(213, 209, 209);
   
 }
 
@@ -308,7 +308,7 @@ background-color: transparent;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 30px;
     padding-bottom: 10px;
 }
 .searchbar {
@@ -340,7 +340,7 @@ background-color: transparent;
 
 .login_container {
     display: flex;
-    gap: 10px;
+    gap: 5px;
     text-decoration: none;
     align-items: center;
 
@@ -351,7 +351,7 @@ background-color: transparent;
     font-weight: 700;
     text-decoration: none;
     font-size: 12.5px;
-    padding: 10px  20px ;
+    padding: 15px  10px ;
     border-radius: 10px;
     transition: all .5s ease;
     &:hover{
@@ -361,13 +361,13 @@ background-color: transparent;
 
 .border {
     width: 1px;
-    height: 20px;
+    height: 10px;
     background-color: #fff;
 }
 
 .languadge_option {
     font-weight: 700;
-    font-size: 12.5px;
+    font-size: 14px;
     transition: all .5s ease;
     cursor: pointer;
     transition: all .5s ease;
