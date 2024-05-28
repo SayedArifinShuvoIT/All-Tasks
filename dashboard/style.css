@@ -12,6 +12,7 @@
     position: fixed;
     transition: width 0.5s;
     border-radius: 0px 10px 50px 10px;
+    border-right: 2px solid #ffdd00;
 }
 
 .sidebar__collapsed {
@@ -95,9 +96,9 @@
     line-height: 11px;
     font-weight: 600;
     letter-spacing: 1px;
-    color: #8adce3;
+    color: #ffdd00;
     margin-bottom: 12px;
-    border-left: 2px solid #8adce3;
+    border-left: 2px solid #ffdd00;
     padding: 0 3px;
 }
 
@@ -107,7 +108,7 @@
     padding: 12px 20px;
     letter-spacing: .5px;
     text-decoration: none;
-    color: #ffffff;
+    color: #000;
     border: 2px solid transparent;
     transition: all .5s ease;
     display: flex;
@@ -115,9 +116,9 @@
     position: relative;
     
     &:hover {
-        border-left: 3px solid #8adce3;
+        border-left: 3px solid #ffdd00;
          margin-left: 10px;
-        color: #8adce3;
+        color: #ffdd00;
         font-weight: 600;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
         border-radius: 0 0 15px 0;
@@ -162,12 +163,13 @@
 }
 
 .hamburger__menu_close {
-    color: #002aff;
+    color: #ffdd00;
     font-size: 25px;
     position: absolute;
-    left: 5px;
+    left: 16px;
     transition: all .5s ease;
     cursor: pointer;
+   
 }
 
 .hamburger__menu_close:hover {
@@ -194,13 +196,13 @@
 .navbar__container {
     display: flex;
     justify-content: space-between;
-    padding: 12px 40px 13px;
+    padding: 12px 60px 13px;
     position: sticky;
 }
 
 .searchbar__div {
     background-color: #F6F6FB;
-    padding: 5px 10px;
+    padding: 5px 7px;
     border-radius: 5px;
     width: 30vw;
     display: flex;
@@ -312,16 +314,16 @@
 
 .main__content {
     
-    margin-left: 255px;
+    margin-left: 271px;
     transition: margin-left 0.5s;
 }
 
 .sidebar__collapsed ~ .main__content {
-    margin-left: 85px;
+    margin-left: 101px;
 }
 
 .sidebar__collapsed:hover ~ .main__content {
-    margin-left: 245px;
+    margin-left: 278px;
 }
 
 .submenu {
