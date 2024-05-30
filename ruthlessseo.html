@@ -3,14 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ruthless SEO</title>
+    <title>SEOmissiles</title>
     <link rel="stylesheet" href="ruthlessseo/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
 </head>
 <body>
-    <nav class="navber">
+    <!-- <nav class="navber">
         <div class="container navbar_container">
           <div class="navbar_left">
             <img class="navbar_logo" src="./ruthlessseo/assets/logo.png" alt="logo">
@@ -28,7 +30,7 @@
             </div>
           </div>
         </div>
-    </nav>
+    </nav> -->
     <div class="hero__container">
         <div class="hero__container_overlay"></div>
         <div class="hero_container">
@@ -38,6 +40,15 @@
                 <img src="./ruthlessseo/assets/main_heading.png" class="hero_heading" alt="heading">
             </div>
         </div>
+        <div class="mobile_hero_container">
+            <div class="mobile_hero">
+                <img src="./ruthlessseo/assets/hero-1.png" alt="" class="mobile_hero_img">
+                <div class="mobile_headings">
+                    <img class="mobile_top_heading" src="./ruthlessseo/assets/top heading.png" alt="">
+                <img class="mobile_heading" src="./ruthlessseo/assets/mobile heading.png" alt="">
+                </div>
+            </div>
+        </div>
         <div class="hero_button_container">
             <a href="#" class="hero__button">Learn More</a>
         </div>
@@ -45,12 +56,27 @@
 
     <div class="showcase">
         <div class="container showcase__container">
-            <img src="./ruthlessseo/assets/Bandar Q 1.png" alt="game image" class="showcase_img">
-            <img src="./ruthlessseo/assets/Pkv Slots 1.png" alt="game image" class="showcase_img">
-            <img src="./ruthlessseo/assets/Adu Q.png" alt="game image" class="showcase_img">
-            <img src="./ruthlessseo/assets/BD QQ.png" alt="game image" class="showcase_img">
-            <img src="./ruthlessseo/assets/Sakong.png" alt="game image" class="showcase_img">
-            <img src="./ruthlessseo/assets/Domino 99 1.png" alt="game image" class="showcase_img">
+            
+            
+            
+            
+          
+            
+            <div class="swiper-container">
+                <div style="text-align: center;" class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img src="./ruthlessseo/assets/Bandar Q 1.png" alt="game image" class="showcase_img">
+                  </div>
+                  <div class="swiper-slide"><img src="./ruthlessseo/assets/Pkv Slots 1.png" alt="game image" class="showcase_img"></div>
+                  <div class="swiper-slide"><img src="./ruthlessseo/assets/Adu Q.png" alt="game image" class="showcase_img"></div>
+                  <div class="swiper-slide"><img src="./ruthlessseo/assets/BD QQ.png" alt="game image" class="showcase_img"></div>
+                  <div class="swiper-slide">  <img src="./ruthlessseo/assets/Sakong.png" alt="game image" class="showcase_img"></div>
+                  <div class="swiper-slide"><img src="./ruthlessseo/assets/Domino 99 1.png" alt="game image" class="showcase_img"></div>
+                  
+                </div>
+              
+        
+              </div>
         </div>
 
     </div>
@@ -72,7 +98,7 @@
         </div>
     </div>
     <div class="why_us_section">
-        <div class="info_2_section container">
+        <div class="info_2_section_pc container">
             <div class="info_2_top">
                 <h1 class="info_2_heading">THE CASINO BUSINESS GAME CHANGER</h1>
             </div>
@@ -90,6 +116,18 @@
                     </div>
                 </div>
               </div>
+            </div>
+        </div>
+        <div class="info_2_mobile container">
+            <h3 class="info_2_mobile_heading">THE CASINO BUSINESS
+                GAME CHANGER</h3>
+            <img src="./ruthlessseo/assets/comics caracter.png" alt="" class="info_2_mobile_img">
+            <div class="info_2_mobile_texts">
+                <div class="info_2_mobile_text">
+                    <img  src="./ruthlessseo/assets/Group 1650.png" alt="" class="mobile_border">
+                    <p class="info_2_mobile_desc">SEO is the high-stakes game changer in the casino business, your neon sign on the internet superhighway. If you're not topping those search engine results, you're practically handing out chips to your competitors.</p>
+                    <p class="info_2_mobile_desc">It's not just about being seen; it's about dominating the digital landscape. Every click you miss is a bet you lose. With killer SEO, your casino doesn't just attract visitors; it pulls in high rollers from around the globe, converting searches into cash and browsers into gamblers. In the casino industry, if you're not all in on SEO, you're folding a winning hand.</p>
+                </div>
             </div>
         </div>
         <div class="advantage_section">
@@ -154,7 +192,7 @@
         <div class="pricing_section_heading">
             <h3 class="pricing__top_heading">Our Pricing Plans</h3>
         </div>
-        <div class="pricing__cards">
+        <div class="pricing__cards container">
             <div class="pricing__card">
                 <img class="pricing_img" src="./ruthlessseo/assets/pricing1.png" alt="pricing">
                 <p class="pricing_plan_name">STARTER</p>
@@ -172,7 +210,7 @@
                             <div class="pricing_detail"><img src="./ruthlessseo/assets/pricing_icon 1.png" alt="" class="list_icon"> <p>Lorem ipsum dolor sit amet amets</p></div>
                             <div class="pricing_detail"><img src="./ruthlessseo/assets/pricing_icon 1.png" alt="" class="list_icon"> <p>Lorem ipsum dolor sit amet amets</p></div>
                             <div class="pricing_detail"><img src="./ruthlessseo/assets/pricing_icon 1.png" alt="" class="list_icon"> <p>Lorem ipsum dolor sit amet amets</p></div>
-                           
+                            <div class="pricing_detail"><img src="./ruthlessseo/assets/pricing_icon 1.png" alt="" class="list_icon"> <p>Lorem ipsum dolor sit amet amets</p></div>
                          </div>
 
                          <div class="pricing_button_container">
@@ -182,8 +220,8 @@
                 </div>
             </div>
             <div class="pricing__card">
-                <img class="pricing_img" src="./ruthlessseo/assets/pricing1.png" alt="pricing">
-                <p class="pricing_plan_name">STARTER</p>
+                <img class="pricing_img" src="./ruthlessseo/assets/pricing2.png" alt="pricing">
+                <p class="pricing_plan_name STANDARD_name">STANDARD</p>
                 <div class="pricing_content">
                     <div class="pricing__heading">
                         <h3 class="pricing__heading_top">On Sale <span>800$</span></h3>
@@ -198,18 +236,18 @@
                             <div class="pricing_detail"><img src="./ruthlessseo/assets/pricing_icon 1.png" alt="" class="list_icon"> <p>Lorem ipsum dolor sit amet amets</p></div>
                             <div class="pricing_detail"><img src="./ruthlessseo/assets/pricing_icon 1.png" alt="" class="list_icon"> <p>Lorem ipsum dolor sit amet amets</p></div>
                             <div class="pricing_detail"><img src="./ruthlessseo/assets/pricing_icon 1.png" alt="" class="list_icon"> <p>Lorem ipsum dolor sit amet amets</p></div>
-                           
+                            <div class="pricing_detail"><img src="./ruthlessseo/assets/pricing_icon 1.png" alt="" class="list_icon"> <p>Lorem ipsum dolor sit amet amets</p></div>
                          </div>
 
                          <div class="pricing_button_container">
-                            <a href="#" class="pricing_button">SUBSCRIBE NOW</a>
+                            <a href="#" class="pricing_button STANDARD_button">SUBSCRIBE NOW</a>
                          </div>
                     </div>
                 </div>
             </div>
             <div class="pricing__card">
-                <img class="pricing_img" src="./ruthlessseo/assets/pricing1.png" alt="pricing">
-                <p class="pricing_plan_name">STARTER</p>
+                <img class="pricing_img" src="./ruthlessseo/assets/pricing3.png" alt="pricing">
+                <p class="pricing_plan_name PLATINUM_name">PLATINUM</p>
                 <div class="pricing_content">
                     <div class="pricing__heading">
                         <h3 class="pricing__heading_top">On Sale <span>800$</span></h3>
@@ -224,15 +262,17 @@
                             <div class="pricing_detail"><img src="./ruthlessseo/assets/pricing_icon 1.png" alt="" class="list_icon"> <p>Lorem ipsum dolor sit amet amets</p></div>
                             <div class="pricing_detail"><img src="./ruthlessseo/assets/pricing_icon 1.png" alt="" class="list_icon"> <p>Lorem ipsum dolor sit amet amets</p></div>
                             <div class="pricing_detail"><img src="./ruthlessseo/assets/pricing_icon 1.png" alt="" class="list_icon"> <p>Lorem ipsum dolor sit amet amets</p></div>
-                           
+                            <div class="pricing_detail"><img src="./ruthlessseo/assets/pricing_icon 1.png" alt="" class="list_icon"> <p>Lorem ipsum dolor sit amet amets</p></div>
                          </div>
 
                          <div class="pricing_button_container">
-                            <a href="#" class="pricing_button">SUBSCRIBE NOW</a>
+                            <a href="#" class="pricing_button PLATINUM_button">SUBSCRIBE NOW</a>
                          </div>
                     </div>
                 </div>
             </div>
+            
+            
             
         </div>
 
@@ -250,7 +290,7 @@
                     <p class="portfolio_top_left_desc">Welcome to the showcase of our SEO expertise tailored specifically for the thriving casino industry. At SEOmissiles, we understand the pulse of the digital casino landscape, and we're here to help you rise above the competition and claim your rightful place at the top of Google's search results.</p>
                 </div>
                 <div class="portfolio_top_right">
-                    <img class="portfolio_top_right_ss" src="./ruthlessseo/assets/portfolio ss.png" alt="">
+                    <img class="portfolio_top_right_ss" src="./ruthlessseo/assets/ss1.png" alt="google ranking">
                 </div>
             </div>
             <div class="container portfolio_bottom">
@@ -262,10 +302,66 @@
                 
             </div>
             </div>
+
+            <div class="portfolio_mobile container">
+             <div class="portfolio_mobile_top">
+                <div class="portfolio_mobile_top_heading_section">
+                    <img class="portfolio_mobile_top_heading_section_img" src="./ruthlessseo/assets/portfolio-man.png" alt="man">
+                    <h3 class="portfolio_mobile_top_heading">Our SEO Portfolio</h3>
+                </div>
+                <div class="portfolio_mobile_top_desc_section">
+                    <p class="portfolio_mobile_top_desc">
+                        Welcome to the showcase of our SEO expertise tailored specifically for the thriving casino industry. At SEOmissiles, we understand the pulse of the digital casino landscape, and we're here to help you rise above the competition and claim your rightful place at the top of Google's search results.
+                    </p>
+                    <div class="portfolio_img_section">
+                        <img src="./ruthlessseo/assets/mobile ss 1.png" alt="" class="portfolio_img">
+                        <img src="./ruthlessseo/assets/mobile ss 2.png" alt="" class="portfolio_img">
+                    </div>
+                </div>
+                
+             </div>
+             <div class="portfolio_mobile_bottom">
+                   <h3 class="portfolio_mobile_bottom_heading">Ready to Dominate?</h3>
+                   <p class="portfolio_mobile_bottom_subheading">Contact Us Today and Start Winning Big!</p>
+
+                   <a href="#" class="portfolio_mobile_bottom_button">CONTACT NOW</a>
+             </div>
+             <div class="footer">asas</div>
+            </div>
         </div>
     </div>
-    <div class="footer">
-        <img class="footer_img" src="./ruthlessseo/assets/footer.png" alt="">
-    </div>
+    
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const swiper = new Swiper('.swiper-container', {
+            
+            autoplay:true,
+           delay:1000,
+            loop: true,
+            breakpoints: {
+    // when window width is >= 320px
+    320: {
+      slidesPerView: 4,
+      spaceBetween: 2
+    },
+    // when window width is >= 480px
+    480: {
+      slidesPerView: 4,
+      spaceBetween: 5
+    },
+    // when window width is >= 640px
+    640: {
+      slidesPerView:5,
+      spaceBetween: 10
+    },
+    1050: {
+      slidesPerView:6,
+      spaceBetween: 10
+    }
+  }
+          });
+        });
+      </script>
 </body>
 </html>
