@@ -23,6 +23,9 @@
 
 .navber {
     background: linear-gradient(to bottom, #EB2582 0%, #890073 100%);
+    position: absolute;
+    z-index: 99999999999;
+    width: 100%;
     
 }
 
@@ -52,6 +55,7 @@
     font-size: 18px;
     color: #fff;
     transition: all .5s;
+    position: relative;
     &:hover {
         opacity: .7;
     }
@@ -76,27 +80,50 @@
     max-width: 973px;
     margin: 0 auto;
     text-align: center;
-    
+    position: relative;
+    z-index: 999999999999;
 
 }
 .hero__headings_image {
     width: auto;
     height: 702px;
+    margin-top: 10px;
 }
 .hero__headings {
     position: relative;
     text-align: center;
 }
-.hero_top_heading {
+.hero__heading_top_div {
     position: absolute;
     top: 55%;
     left: 13%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     
+}
+.main {
+    font-family: "Rubik Wet Paint", system-ui;
+    font-size: 50px;
+    letter-spacing: 10%;
+    color: #EBFF00;
+    padding: 4px 45px 4px 21px;
+    background-image:linear-gradient(to bottom, #EB2582 0%,#890073 100% );
+    text-shadow: 0px 10px 10px rgba(0, 0, 0, 0.93);
+    border-radius: 10px;
+}
+.with {
+    color: #FFEEFE;
+    font-family: "Seaweed Script", cursive;
+    font-size: 98px;
+    letter-spacing: -2px;
+    text-shadow: 0px 10px 10px #EB2582;
+    margin-left: -15px;
 }
 
 .hero_heading {
     position: absolute;
-    top: 69%;
+    top: 71%;
     max-width: 1063px;
     left: -5%;
 }
@@ -377,7 +404,7 @@ background-size: contain;
    padding-bottom: 115px;
    background-repeat: no-repeat;
    background-position: top;
-   background-size: cover;
+   background-size: contain;
 }
 
 .pricing__top_heading {
@@ -813,6 +840,9 @@ background-size: contain;
     display: none;
 }
 @media (max-width: 1055px) {
+    .navber {
+        display: none;
+    }
     .hero_container {
         display: none;
     }
@@ -826,17 +856,17 @@ background-size: contain;
         display: block;
         z-index: 999999999;
         position: relative;
-        margin-bottom: 35%;
+        margin-bottom: 50%;
     }
     .mobile_headings {
         position: absolute;
         bottom: -55%;
     }
     .mobile_top_heading {
-          width: 50%;
+          width: 80%;
     }
     .mobile_heading{
-        width: 60%;
+        width: 90%;
     }
     .info_1_desc {
         font-size: 12px;
@@ -895,7 +925,7 @@ background-size: contain;
     
 }
 .mobile_hero_img {
-    width: 50%;
+    width: 75%;
 }
 .swiper-slide {
    display: flex;
@@ -929,7 +959,7 @@ width: 176px;
         padding: 100px 30px 25px 30px;
     }
     .mobile_hero {
-        margin-bottom: 25%;
+        margin-bottom: 40%;
     }
     .info_1 {
         background-image: url(./assets/mobile\ people\ playing.png);
@@ -989,7 +1019,7 @@ width: 176px;
     
     .hero__button{
         font-size: 14px;
-        padding: 5px 16px;
+        padding: 5px 30px;
     }
 }
 @media (max-width: 475px) {
