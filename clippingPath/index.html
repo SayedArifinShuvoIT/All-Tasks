@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <title>Clipping Path- Elevate Your Visuals with Expert Clipping Path Services</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style type="text/tailwindcss">
+        @layer utilities {
+          *{
+           font-family: "Inter", sans-serif;
+           box-sizing: border-box;
+           padding: 0;
+           margin: 0;
+
+          }
+      
+          .container {
+            max-width: 1200px;
+            margin: 0 auto;
+             padding: 0 20px;
+          }
+        
+          .blue {
+            color: #0F52FF;
+          }
+          .card_border {
+            border: 2px solid #0F52FF;
+            border-image-slice: 1;
+            border-image-source: linear-gradient(to bottom,#0F52FF 0% ,#0f53ff00 100%);
+            border-radius: 0 0 10px 10px;
+            position: relative;
+            box-shadow: 0 0 45px #00000026;
+            transition: all .5s ease;
+            
+          }
+          .card_border::after {
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-image: linear-gradient(to right, #0f53ff00 0%, #0F52FF 50%, #0f53ff00 100%);
+            bottom: 0;
+            left: 0;
+          }
+          .Success_card {
+            flex: 1;
+          }
+          .Success_card:hover .card_heading {
+            color: #fff;
+
+          }
+          .Success_card:hover .bb {
+            background-color: #fff;
+          }
+          .Success_card:hover .bb_1 {
+            background-color: #0F52FF;
+          }
+        }
+       .service_card {
+        width: 30%;
+        display: flex;
+        flex-direction: column;
+        justify-content: end;
+        align-items: center;
+       }
+       .quality_bg {
+        background-image: url(./assets/quality\ bg.png);
+
+       }
+       input:checked ~ .content {
+            max-height: 1000px;
+            transition: max-height 0.5s ease-in-out;
+        }
+
+        input:checked ~ label svg {
+            transform: rotate(180deg);
+            transition: transform 0.5s ease-in-out;
+        }
+        .social_icon {
+          transition: all .5s ease;
+
+        }
+        .social_icon:hover {
+          transform: scale(1.2);
+        }
+      </style>
+</head>
+<body>
+    <div class="container">
+      <div class="flex justify-between gap-3 items-center py-[11px]">
+        <div class="">
+          <img class="max-w-[240px]" src="./assets/Logo.png" alt="Logo">
+        </div>
+        <div class="flex gap-5 justify-between items-center font-semibold text-[18px]">
+          <a href="">Home</a>
+          <a href="">Services</a>
+          <a href="">Portfolio</a>
+          <a href="">Pricing</a>
+          <a href="">About Us</a>
+          <a href="">Contact</a>
+          <a class="text-[#fff] rounded-[10px] bg-[#0F52FF] px-[20px] py-[10px]" href="">Free Trial</a>
+        </div>
+
+    </div>
+    </div>
+    <div class="bg-[#F8F6FA]">
+        <div class="flex justify-between items-center container">
+             <div class="relative max-w-[621px] flex flex-col gap-[32px]">
+              <h1 class=" font-bold text-[75px] leading-[85px] ">Precise and Flawless <span class="blue">Image <span class="flex gap-3 items-center">Cutouts <img src="./assets/pen_icon.png" alt="pen icon" class="shadow-[0_4px_6px_rgba(0,0,0,0.1)] max-w-[56px] max-h-[56px]"></span></span></h1>
+              <p class="text-[18px] font-regular">Mastery in flawless image cutouts, enhancing visual impact and brand excellence with precision. Unlock the artistry, elevate your brand's imagery to unforgettable heights.</p>
+              <div class="flex items-center gap-[30px]">
+                <button class="py-[20px] px-[30px] bg-[#0F52FF] text-[18px] text-white font-semibold rounded-[10px]">Explore Our Services →</button>
+                <button class="py-[20px] px-[30px] bg-[#0F52FF] text-[18px] text-white font-semibold rounded-[10px] m-0">Free Trial →</button>
+              </div>
+             </div>
+             <div class="relative py-[95px]">
+              <img src="./assets/hero_image.png" alt="Hero Image" class="">
+                  <div class="flex gap-[20px] absolute bottom-[90px] ">
+                    <img src="./assets/hero_rating.png" alt="Google Rating" class="shadow-[0_14px_16px_rgba(0,0,0,0.1)] max-w-[250px]">
+                    <img src="./assets/hero_google_trust.png " alt="Google trust" class="shadow-[0_14px_16px_rgba(0,0,0,0.1)] max-w-[250px]">
+                  </div>
+             </div>
+        </div>
+    </div>
+    <div class="container">
+<div class="py-[88px] flex flex-col justify-center items-center gap-[50px]">
+<h2 class="text-[48px] font-bold">Our <span class="blue">Success!</span></h2>
+<div class="flex justify-center  gap-10">
+  <div class="Success_card text-center p-[28px] pb-[21px] card_border hover:bg-[#0F52FF] hover:text-white">
+    <h1 class=" card_heading font-bold text-[48px] text-[#0F52FF]">5K+</h1>
+    <h3 class="relative font-semibold text-[20px] pb-[20px]">
+      Images Daily
+      <span class="absolute bb w-[45px] h-[3px] bg-[#0F52FF] rounded-2xl bottom-[10px] left-[40%]"></span>
+      <span class="absolute bb_1 w-[5px] h-[3px] bg-white rounded-2xl bottom-[10px] left-[42%]"></span>
+
+    </h3>
+    <p class="text-4 leading-[24px]">We deliver over 5,000 stunning images every day.</p>
+  </div>
+  <div class="Success_card text-center p-[28px] pb-[21px] card_border hover:bg-[#0F52FF] hover:text-white">
+    <h1 class=" card_heading font-bold text-[48px] text-[#0F52FF]">100%</h1>
+    <h3 class="relative font-semibold text-[20px] pb-[20px]">
+      Quality
+      <span class="absolute bb w-[45px] h-[3px] bg-[#0F52FF] rounded-2xl bottom-[10px] left-[40%]"></span>
+      <span class="absolute bb_1 w-[5px] h-[3px] bg-white rounded-2xl bottom-[10px] left-[42%]"></span>
+
+    </h3>
+    <p class="text-4 leading-[24px]">We guarantee 100% high-quality services.</p>
+  </div>
+  <div class="Success_card text-center p-[28px] pb-[21px] card_border hover:bg-[#0F52FF] hover:text-white">
+    <h1 class=" card_heading font-bold text-[48px] text-[#0F52FF]">10K+</h1>
+    <h3 class="relative font-semibold text-[20px] pb-[20px]">
+      Happy Clients
+      <span class="absolute bb w-[45px] h-[3px] bg-[#0F52FF] rounded-2xl bottom-[10px] left-[40%]"></span>
+      <span class="absolute bb_1 w-[5px] h-[3px] bg-white rounded-2xl bottom-[10px] left-[42%]"></span>
+
+    </h3>
+    <p class="text-4 leading-[24px]">Join our community of over 10,000 satisfied customers worldwide.</p>
+  </div>
+  <div class="Success_card text-center p-[28px] pb-[21px] card_border hover:bg-[#0F52FF] hover:text-white">
+    <h1 class=" card_heading font-bold text-[48px] text-[#0F52FF]">6M+</h1>
+    <h3 class="relative font-semibold text-[20px] pb-[20px]">
+      Files Completed
+      <span class="absolute bb w-[45px] h-[3px] bg-[#0F52FF] rounded-2xl bottom-[10px] left-[40%]"></span>
+      <span class="absolute bb_1 w-[5px] h-[3px] bg-white rounded-2xl bottom-[10px] left-[42%]"></span>
+
+    </h3>
+    <p class="text-4 leading-[24px]">We’ve expertly processed over 6 million files and counting!</p>
+  </div>
+</div>
+</div>
+    </div>
+
+
+    <div style="background-image: url(./assets/expartise_bg.png);" class="bg-cover bg-no-repeat">
+     <div class="container">
+      <div class="py-[88px] flex flex-col justify-center items-center gap-[50px]">
+        <div class="text-center">
+          <h2 class="text-[48px] font-bold">Our <span class="blue">Expertise</span></h2>
+      <p class="text-[18px] max-w-[780px] text-center">Elevate your business with our expertise. From precise image cutouts to advanced editing, we amplify your brand's visual impact, driving growth and engagement.</p>
+      </div>
+      <div class="ex_cards flex justify-center gap-5 ">
+        <div class="card shadow-[0_60px_10px_#00000005] bg-white rounded-[10px]  flex justify-center flex-col items-center px-[10px] py-[42px]">
+          <img src="./assets/ex_icon_1.png" alt="expertise icon" class="mb-[16px] shadow-[0_4px_10px_#0080FF] rounded-full">
+          <h3 class="ex_heading text-[20px] font-semibold relative pb-6">All Sizes Business <span class="ex_b absolute w-[30px] h-[3px] rounded-2xl bg-[#0080FF] bottom-3 left-[45%]"></span></h3>
+          <p class="text-center leading-24">Tailored solutions for businesses of any scale, ensuring precise outcomes to suit your needs.</p>
+
+        </div>
+        <div class="card shadow-[0_60px_10px_#00000005] bg-white rounded-[10px]  flex justify-center flex-col items-center px-[10px] py-[42px]">
+          <img src="./assets/ex_icon_2.png" alt="expertise icon" class="mb-[16px] shadow-[0_4px_10px_#FF0000] rounded-full">
+          <h3 class="ex_heading text-[20px] font-semibold relative pb-6">All Sizes Business <span class="ex_b absolute w-[30px] h-[3px] rounded-2xl bg-[#FF0000] bottom-3 left-[45%]"></span></h3>
+          <p class="text-center leading-24">Tailored solutions for businesses of any scale, ensuring precise outcomes to suit your needs.</p>
+
+        </div>
+        <div class="card shadow-[0_60px_10px_#00000005] bg-white rounded-[10px]  flex justify-center flex-col items-center px-[10px] py-[42px]">
+          <img src="./assets/ex_icon_3.png" alt="expertise icon" class="mb-[16px] shadow-[0_4px_10px_#FFB500] rounded-full">
+          <h3 class="ex_heading text-[20px] font-semibold relative pb-6">All Sizes Business <span class="ex_b absolute w-[30px] h-[3px] rounded-2xl bg-[#FFB500] bottom-3 left-[45%]"></span></h3>
+          <p class=" text-center leading-24">Tailored solutions for businesses of any scale, ensuring precise outcomes to suit your needs.</p>
+
+        </div>
+        <div class="card shadow-[0_60px_10px_#00000005] bg-white rounded-[10px]  flex justify-center flex-col items-center px-[10px] py-[42px]">
+          <img src="./assets/ex_icon_4.png" alt="expertise icon" class="mb-[16px] shadow-[0_4px_10px_#6000FF] rounded-full">
+          <h3 class="ex_heading text-[20px] font-semibold relative pb-6">All Sizes Business <span class="ex_b absolute w-[30px] h-[3px] rounded-2xl bg-[#6000FF] bottom-3 left-[45%]"></span></h3>
+          <p class="text-center leading-24">Tailored solutions for businesses of any scale, ensuring precise outcomes to suit your needs.</p>
+
+        </div>
+        
+       
+        
+      </div>
+        </div>
+
+       
+
+     </div>
+    </div>
+
+    <div class="bg-[#F8F6FA] py-[118px]">
+      <div class="container text-center">
+        <h2 class="font-bold text-[48px]"><span class="blue">Unparalleled</span> Service Offerings</h2>
+        <div class="service_cards py-[70px] flex justify-center gap-[50px] flex-wrap">
+          <div class="service_card p-[46px] bg-[#E1F0FF] rounded-[10px]">
+            <img src="./assets/service_1.png" alt="services" class="max-h-[167px]  mb-[46px]">
+            <h4 class="font-bold text-[26px]">Clipping Path</h4>
+          </div>
+          <div class="service_card p-[46px] bg-[#E1F0FF] rounded-[10px]">
+            <img src="./assets/service_2.png" alt="services" class="max-h-[167px]  mb-[46px]">
+            <h4 class="font-bold text-[26px]">Ghost Mannequin</h4>
+          </div>
+          <div class="service_card p-[46px] bg-[#E1F0FF] rounded-[10px]">
+            <img src="./assets/service_3.png" alt="services" class="max-h-[167px]  mb-[46px]">
+            <h4 class="font-bold text-[26px]">Color Correction</h4>
+          </div>
+          <div class="service_card p-[46px] bg-[#E1F0FF] rounded-[10px]">
+            <img src="./assets/service_1.png" alt="services" class="max-h-[167px]  mb-[46px]">
+            <h4 class="font-bold text-[26px]">Image Masking</h4>
+          </div>
+          <div class="service_card p-[46px] bg-[#E1F0FF] rounded-[10px]">
+            <img src="./assets/service_2.png" alt="services" class="max-h-[167px]  mb-[46px]">
+            <h4 class="font-bold text-[26px]">eCommerce Editing</h4>
+          </div>
+          <div class="service_card p-[46px] bg-[#E1F0FF] rounded-[10px]">
+            <img src="./assets/service_3.png" alt="services" class="max-h-[167px]  mb-[46px]">
+            <h4 class="font-bold text-[26px]">Photo Retouching</h4>
+          </div>
+        
+    
+        </div>
+        <button class="py-[20px] px-[30px] bg-[#0F52FF] text-[18px] text-white font-semibold rounded-[10px] m-0">Browse All Services →</button>
+      </div>
+
+    </div>
+
+    <div class="desc_section py-[118px]">
+      <div class="container flex gap-[64px] ">
+        <div class="flex-1">
+          <div class="desc_section_heading flex gap-[5px] items-center mb-[25px]"><img src="./assets/pen_icon.png" alt="pen icon" class="w-[56px] h-[56px]"> <h3 class="text-[48px] font-bold ">Clipping Path</h3></div>
+          <p class="desc_section_subheading font-semibold text-[20px] blue mb-[10px]">Elevate Your Visuals with Expert Clipping Path Services</p>
+
+          <div class="flex flex-col gap-[30px]">
+            <p class="">Enhance your images with our professional photo retouching services. Our team of experienced editors is dedicated to bringing out the best in every photo, ensuring your visuals captivate and impress.</p>
+            <p class="">Whether you need subtle adjustments or major enhancements, we cater to all your retouching needs with precision and care.Our retouching services cover a wide range of requirements, from color correction and blemish removal to advanced editing techniques that make your images stand out. </p>
+            <div class="flex flex-wrap gap-[20px] justify-between">
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Color Correction</p>
+              </div>
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Blemish Removal</p>
+              </div>
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Background Enhancement</p>
+              </div>
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Advanced Editing</p>
+              </div>
+              <button class="py-[20px] px-[30px] bg-[#0F52FF] text-[18px] text-white font-semibold rounded-[10px] m-0">Get a Quote →</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1">
+          <img src="./assets/clipping path.png" class="" alt="clipping path">
+        </div>
+      </div>
+    </div>
+    <div class="desc_section py-[118px] bg-[#F8F6FA]">
+      <div class="container flex flex-row-reverse gap-[64px] ">
+        <div class="flex-1">
+          <div class="desc_section_heading flex gap-[5px] items-center mb-[25px]"><img src="./assets/pen_icon.png" alt="pen icon" class="w-[56px] h-[56px]"> <h3 class="text-[48px] font-bold ">Ghost Mannequin</h3></div>
+          <p class="desc_section_subheading font-semibold text-[20px] blue mb-[10px]">Transform Your Images with Expert Photo Retouching</p>
+
+          <div class="flex flex-col gap-[30px]">
+            <p class="">Our team of skilled editors utilizes advanced tools and techniques to create flawless image outlines, ensuring that your products and subjects are perfectly isolated from their backgrounds. </p>
+            <p class="">We understand the importance of high-quality visuals in today's competitive market. That’s why we are committed to delivering top-tier clipping path services that enhance your brand's image and drive customer engagement. From single images to bulk orders, we handle projects of all sizes with the same level of dedication and expertise.</p>
+            <div class="flex flex-wrap gap-[20px] justify-between">
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Precision and Accuracy</p>
+              </div>
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Fast Turnaround</p>
+              </div>
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Cost-Effective Solutions</p>
+              </div>
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Scalable Service</p>
+              </div>
+              <button class="py-[20px] px-[30px] bg-[#0F52FF] text-[18px] text-white font-semibold rounded-[10px] m-0">Get a Quote →</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1">
+          <img src="./assets/ghost mannequin.png" class="" alt="ghost mannequin">
+        </div>
+      </div>
+    </div>
+    <div class="desc_section py-[118px]">
+      <div class="container flex gap-[64px] ">
+        <div class="flex-1">
+          <div class="desc_section_heading flex gap-[5px] items-center mb-[25px]"><img src="./assets/pen_icon.png" alt="pen icon" class="w-[56px] h-[56px]"> <h3 class="text-[48px] font-bold ">Color Correction</h3></div>
+          <p class="desc_section_subheading font-semibold text-[20px] blue mb-[10px]">Elevate Your Visuals with Expert Clipping Path Services</p>
+
+          <div class="flex flex-col gap-[30px]">
+            <p class="">Our team of skilled editors utilizes advanced tools and techniques to create flawless image outlines, ensuring that your products and subjects are perfectly isolated from their backgrounds.</p>
+            <p class="">
+              We understand the importance of high-quality visuals in today's competitive market. That’s why we are committed to delivering top-tier clipping path services that enhance your brand's image and drive customer engagement. From single images to bulk orders, we handle projects of all sizes with the same level of dedication and expertise. </p>
+            <div class="flex flex-wrap gap-[20px] justify-between">
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Color Correction</p>
+              </div>
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Blemish Removal</p>
+              </div>
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Background Enhancement</p>
+              </div>
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Advanced Editing</p>
+              </div>
+              <button class="py-[20px] px-[30px] bg-[#0F52FF] text-[18px] text-white font-semibold rounded-[10px] m-0">Get a Quote →</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1">
+          <img src="./assets/Color Correction.png" class="" alt="Color Correction">
+        </div>
+      </div>
+    </div>
+    <div class="desc_section py-[118px] bg-[#F8F6FA]">
+      <div class="container flex flex-row-reverse gap-[64px] ">
+        <div class="flex-1">
+          <div class="desc_section_heading flex gap-[5px] items-center mb-[25px]"><img src="./assets/pen_icon.png" alt="pen icon" class="w-[56px] h-[56px]"> <h3 class="text-[48px] font-bold ">Image Masking</h3></div>
+          <p class="desc_section_subheading font-semibold text-[20px] blue mb-[10px]">Transform Your Images with Expert Photo Retouching</p>
+
+          <div class="flex flex-col gap-[30px]">
+            <p class="">Enhance your images with our professional photo retouching services. Our team of experienced editors is dedicated to bringing out the best in every photo, ensuring your visuals captivate and impress. </p>
+            <p class="">
+              Whether you need subtle adjustments or major enhancements, we cater to all your retouching needs with precision and care.Our retouching services cover a wide range of requirements, from color correction and blemish removal to advanced editing techniques that make your images stand out. </p>
+            <div class="flex flex-wrap gap-[20px] justify-between">
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Precision and Accuracy</p>
+              </div>
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Fast Turnaround</p>
+              </div>
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Cost-Effective Solutions</p>
+              </div>
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Scalable Service</p>
+              </div>
+              <button class="py-[20px] px-[30px] bg-[#0F52FF] text-[18px] text-white font-semibold rounded-[10px] m-0">Get a Quote →</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1">
+          <img src="./assets/Image Masking.png" class="" alt="Image Masking">
+        </div>
+      </div>
+    </div>
+    <div class="desc_section py-[118px]">
+      <div class="container flex gap-[64px] ">
+        <div class="flex-1">
+          <div class="desc_section_heading flex gap-[5px] items-center mb-[25px]"><img src="./assets/pen_icon.png" alt="pen icon" class="w-[56px] h-[56px]"> <h3 class="text-[48px] font-bold ">eCommerce Editing</h3></div>
+          <p class="desc_section_subheading font-semibold text-[20px] blue mb-[10px]">Elevate Your Visuals with Expert Clipping Path Services</p>
+
+          <div class="flex flex-col gap-[30px]">
+            <p class="">Enhance your images with our professional photo retouching services. Our team of experienced editors is dedicated to bringing out the best in every photo, ensuring your visuals captivate and impress.</p>
+            <p class="">Whether you need subtle adjustments or major enhancements, we cater to all your retouching needs with precision and care.Our retouching services cover a wide range of requirements, from color correction and blemish removal to advanced editing techniques that make your images stand out. </p>
+            <div class="flex flex-wrap gap-[20px] justify-between">
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Color Correction</p>
+              </div>
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Blemish Removal</p>
+              </div>
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Background Enhancement</p>
+              </div>
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Advanced Editing</p>
+              </div>
+              <button class="py-[20px] px-[30px] bg-[#0F52FF] text-[18px] text-white font-semibold rounded-[10px] m-0">Get a Quote →</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1">
+          <img src="./assets/eCommerce Editing.png" class="" alt="eCommerce Editing">
+        </div>
+      </div>
+    </div>
+    <div class="desc_section py-[118px] bg-[#F8F6FA]">
+      <div class="container flex flex-row-reverse gap-[64px] ">
+        <div class="flex-1">
+          <div class="desc_section_heading flex gap-[5px] items-center mb-[25px]"><img src="./assets/pen_icon.png" alt="pen icon" class="w-[56px] h-[56px]"> <h3 class="text-[48px] font-bold ">Photo Retouching</h3></div>
+          <p class="desc_section_subheading font-semibold text-[20px] blue mb-[10px]">Transform Your Images with Expert Photo Retouching</p>
+
+          <div class="flex flex-col gap-[30px]">
+            <p class="">Enhance your images with our professional photo retouching services. Our team of experienced editors is dedicated to bringing out the best in every photo, ensuring your visuals captivate and impress.  </p>
+            <p class="">Whether you need subtle adjustments or major enhancements, we cater to all your retouching needs with precision and care.Our retouching services cover a wide range of requirements, from color correction and blemish removal to advanced editing techniques that make your images stand out. </p>
+            <div class="flex flex-wrap gap-[20px] justify-between">
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Precision and Accuracy</p>
+              </div>
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Fast Turnaround</p>
+              </div>
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Cost-Effective Solutions</p>
+              </div>
+              <div class="desc_list flex gap-[12px]">
+                <img src="./assets/tikmark.png" alt="" class="">
+                <p class="text-[18px] font-semibold">Scalable Service</p>
+              </div>
+              <button class="py-[20px] px-[30px] bg-[#0F52FF] text-[18px] text-white font-semibold rounded-[10px] m-0">Get a Quote →</button>
+            </div>
+          </div>
+        </div>
+        <div class="flex-1">
+          <img src="./assets/Photo Retouching.png" class="" alt="Photo Retouching">
+        </div>
+      </div>
+    </div>
+    <div class="py-[88px]">
+      <div class="container flex gap-[18px] justify-between items-center">
+        <div class="flex-1 flex flex-col gap-[30px]">
+          <h2 class="font-bold text-[48px] leading-[60px]">Market-Leading
+            <span class="blue">Competitive</span> Pricing</h2>
+            <p class="font-medium"><span class="font-bold">Don't worry about costs –</span> we offer the most competitive prices in the market. Our goal is to provide top-quality clipping path services that fit your budget, ensuring you get the best value without compromising on quality. Let us handle your image editing needs affordably and efficiently.</p>
+            <div class="flex flex-wrap">
+             <div class="flex-1">
+              <div class="flex items-center gap-[10px] font-semibold"><img src="./assets/icomoon-free_checkmark.png" alt="checkmark" class=""> <p class="">Affordable Rates</p></div>
+              <div class="flex items-center gap-[10px] font-semibold"><img src="./assets/icomoon-free_checkmark.png" alt="checkmark" class=""> <p class="">Transparent Pricing</p></div>
+             </div>
+              <div class="flex-1">
+                <div class="flex items-center gap-[10px] font-semibold"><img src="./assets/icomoon-free_checkmark.png" alt="checkmark" class=""> <p class="">Quality Assurance</p></div>
+              <div class="flex items-center gap-[10px] font-semibold"><img src="./assets/icomoon-free_checkmark.png" alt="checkmark" class=""> <p class="">Efficient Service</p></div>
+              </div>
+  
+            </div>
+        </div>
+        <div class=""><img src="./assets/business-plan-concept-3d-rendering 1.png" alt="business-plan-concept-3d-rendering" class="flex-1"></div>
+      </div>
+      <div class="flex justify-center">
+        <button class="py-[20px] px-[30px] bg-[#0F52FF] text-[18px] text-white font-semibold rounded-[10px] m-0">Browse All Services →</button>
+      </div>
+
+    </div>
+    <div class="bg-[#F8F6FA] py-[118px]">
+      <div class="steps container flex flex-col justify-center items-center">
+        <h1 class="text-[48px] font-bold">You’re Just <span class="blue">4 Steps</span> Away</h1>
+        <p class="text-[18px] text-center max-w-[780px] mb-[70px]">Getting our service is simple. Focus on your business while we handle all Photoshop and image retouching needs. Our skilled team ensures top-quality service, available 24/7 in four easy steps.</p>
+        <div class="relative steps_cards flex flex-wrap justify-center items-center gap-10">
+          <span class="absolute top-[30px] left-[-40px]"><img src="./assets/steps bg.png" alt=""></span>
+             <div class="steps_card relative max-w-[480px] flex  justify-center items-center rounded-lg gap-[26px] bg-white p-[26px]">
+              <h4 class="absolute font-semibold text-[20px] py-[10px] px-5 bg-[#FF8383] text-white rounded-lg left-0 top-[-25px] shadow-[0_0_15px_#00000046]">
+                STEP 01
+              </h4>
+              <img src="./assets/step_1.png" alt="Step" class="">
+              <div class="step_texts">
+                <h4 class="text-[20px] font-semibold">Get Free Trial</h4>
+                <p class="leading-24">New client? Try our Free Trial. Send up to 3 images and instructions for quality photo editing. No credit card needed.</p>
+              </div>
+             </div>
+             <div class="steps_card relative max-w-[480px] flex  justify-center items-center rounded-lg gap-[26px] bg-white p-[26px]">
+              <h4 class="absolute font-semibold text-[20px] py-[10px] px-5 bg-[#7ACA5D] text-white rounded-lg left-0 top-[-25px] shadow-[0_0_15px_#00000046]">
+                STEP 02
+              </h4>
+              <img src="./assets/step_2.png" alt="Step" class="">
+              <div class="step_texts">
+                <h4 class="text-[20px] font-semibold">Get A Quote</h4>
+                <p class="leading-24">We provide custom quotes based on your image volume and complexity, offering competitive rates compared to others.</p>
+              </div>
+             </div>
+             <div class="steps_card max-w-[480px] flex  justify-center items-center rounded-lg gap-[26px] bg-white p-[26px] relative">
+              <h4 class="absolute font-semibold text-[20px] py-[10px] px-5 bg-[#6487E2] text-white rounded-lg left-0 top-[-25px] shadow-[0_0_15px_#00000046]">
+                STEP 03
+              </h4>
+              <img src="./assets/step_3.png" alt="Step" class="">
+              <div class="step_texts">
+                <h4 class="text-[20px] font-semibold">We Edit</h4>
+                <p class="leading-24">After confirmation, we kick off promptly. Our dedicated team works tirelessly to meet your needs, even with large orders.</p>
+              </div>
+             </div>
+             <div class="steps_card relative max-w-[480px] flex  justify-center items-center rounded-lg gap-[26px] bg-white p-[26px]">
+              <h4 class="absolute font-semibold text-[20px] py-[10px] px-5 bg-[#D7A72C] text-white rounded-lg left-0 top-[-25px] shadow-[0_0_15px_#00000046]">
+                STEP 04
+              </h4>
+              <img src="./assets/step_4.png" alt="Step" class="">
+              <div class="step_texts">
+                <h4 class="text-[20px] font-semibold">Get Images Back</h4>
+                <p class="leading-24">After editing, expect swift delivery within 24 hours. We prioritize timely service. Satisfied? Order again!</p>
+              </div>
+             </div>
+             
+             
+        </div>
+      </div>
+    </div>
+
+    <div class="quality_bg py-[88px] bg-no-repeat bg-cover bg-top">
+<div class="flex gap-[54px] items-center center container">
+  <div class="flex-1">
+    <p class="font-semibold text-5 blue">WE PROVIDE BEYOND INDUSTRY STANDARDS</p>
+    <h1 class="text-[48px] font-bold">The Quality of Your Images will Help You Sell More...</h1>
+    <p class="leading-[24px]">High-quality images drive sales. Compelling visuals capture attention, boost engagement, and increase conversions. Our expertise ensures your images stand out, enhancing brand credibility and driving sales growth. Invest in superior imagery for maximum impact and sales success.</p>
+    <button class="py-[20px] px-[30px] bg-[#0F52FF] text-[18px] text-white font-semibold rounded-[10px] mt-[76px]">Get Our Service →</button>
+  </div>
+  <div class="flex-1">
+    <img src="./assets/mobile_phone.png" alt="" class="">
+  </div>
+</div>
+
+    </div>
+    <div class="bg-[#F8F6FA] py-[118px] ">
+     <div class="relative">
+      <div class="container ">
+        <h1 class="font-bold text-[48px] "><span class="blue">Success</span> Stories</h1>
+        <div class=" flex items-center gap-[50px]">
+          <div class="flex-1">
+            
+            <img src="./assets/portfolio_img.png" alt="" class="">
+          </div>
+          <div class="flex-1 ">
+            <span class="Portfolio absolute"></span>
+            <h2 class="font-medium text-[30px]">Products Images help us improve our sells by 30%</h2>
+            <p class="leading-[28px] mt-[34px] mb-[48px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis mattis lacus. Sed facilisis neque quis ipsum laoreet varius. Vivamus risus purus, malesuada nec tellus et, condimentum egestas dui. Etiam interdum eu tortor feugiat sollicitudin. Sed quis ligula eget justo sollicitudin aliquam. </p>
+  
+            <h4 class="text-[20px] font-semibold">Samantha William</h4>
+            <p class="">Senior Designer at DesignStudio</p>
+          </div>
+        </div>
+       </div>
+     </div>
+    </div>
+
+    <div class="py-[118px]">
+      <div class="container flex flex-col items-center justify-center flex-wrap">
+        <h1 class="font-bold text-[48px] ">Our <span class="blue">Work Gallery</span></h1>
+        <div class="mt-[26px] mb-[70px]  max-w-[780px] flex gap-[20px] justify-center flex-wrap text-center">
+          <button class="font-semibold text-[18px] py-[10px] px-[20px] border-none bg-[#ECECEC] rounded-lg transition-all duration-500 ease-in hover:bg-[#0F52FF] hover:text-white">Shadow Creation</button>
+          <button class="font-semibold text-[18px] py-[10px] px-[20px] border-none bg-[#ECECEC] rounded-lg transition-all duration-500 ease-in hover:bg-[#0F52FF] hover:text-white">Photo Editing</button>
+          <button class="font-semibold text-[18px] py-[10px] px-[20px] border-none bg-[#ECECEC] rounded-lg transition-all duration-500 ease-in hover:bg-[#0F52FF] hover:text-white">Photo Masking</button>
+          <button class="font-semibold text-[18px] py-[10px] px-[20px] border-none bg-[#ECECEC] rounded-lg transition-all duration-500 ease-in hover:bg-[#0F52FF] hover:text-white">Vector Conversion</button>
+          <button class="font-semibold text-[18px] py-[10px] px-[20px] border-none bg-[#ECECEC] rounded-lg transition-all duration-500 ease-in hover:bg-[#0F52FF] hover:text-white">Clipping Path</button>
+          <button class="font-semibold text-[18px] py-[10px] px-[20px] border-none bg-[#ECECEC] rounded-lg transition-all duration-500 ease-in hover:bg-[#0F52FF] hover:text-white">Photo retouching</button>
+        </div>
+  <div class="gallary flex gap-5">
+<div class="flex-1">
+  <img src="./assets/Gallery 1.png" alt="Gallary" class="">
+</div>
+<div class="flex-1 flex flex-col gap-5">
+  <img src="./assets/Gallery 2.png" alt="Gallary" class="">
+  <img src="./assets/Gallery 4.png" alt="Gallary" class="">
+</div>
+<div class="flex-1">
+  <img src="./assets/Gallery 5.png" alt="Gallary" class="">
+</div>
+  </div>
+      </div>
+    </div>
+
+    <div class="bg-[#F8F6FA] py-[118px]">
+      <div class="container">
+        <div class="contact_form flex flex-col justify-center items-center gap-[118px] ">
+          <h1 class="font-bold text-[48px] text-center">Ready to <span class="blue">transform your images</span> with our top-notch clipping path services?</h1>
+        <form action="#" class="flex flex-col gap-5">
+          <div class="contact_up flex gap-5">
+            <input type="text" class="p-[6px] bg-transparent border  border-[#d4d4d4] rounded-lg" placeholder="Your Name*">
+            <input type="text" class="p-[6px] bg-transparent border  border-[#d4d4d4] rounded-lg" placeholder="Your Email*">
+            <input type="text" class="p-[6px] bg-transparent border  border-[#d4d4d4] rounded-lg" placeholder="Your Phone No.">
+      
+          </div>
+          <div class="contact_up flex gap-5">
+            <textarea type="text" class="p-[6px] text-[#979797] w-full min-h-[420px] bg-transparent border  border-[#d4d4d4] rounded-lg active:text-black">Your Message*</textarea>
+           
+      
+          </div>
+          <button class="py-5 bg-[#0F52FF] rounded-lg text-white font-semibold text-[18px]" type="submit">Submit →</button>
+        </form>
+        <div class="faq_section flex flex-col justify-center items-center">
+          <h2 class="text-[48px] font-bold mb-[70px]">Got Questions? </h2>
+          <div class="accordion">
+            <div class="mx-auto">
+              <div class="mb-4 ">
+                  <input type="checkbox" id="accordion-1" class="hidden peer">
+                  <label for="accordion-1" class="flex justify-between items-center bg-white  p-[26px]  cursor-pointer peer-checked:bg-white font-semibold text-[22px] rounded-[10px] peer-checked:rounded-[10px_10px_0_0]">
+                      <span>Do We Offer Bulk Image Discounts?</span>
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform duration-500 ease-in-out" viewBox="0 0 20 20" fill="#0F52FF">
+                          <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707A1 1 0 014.293 8.293l5-5A1 1 0 0110 3z" clip-rule="evenodd" />
+                      </svg>
+                  </label>
+                  <div class="content bg-white overflow-hidden max-h-0 transition-all duration-500 ease-in-out peer-checked:max-h-40">
+                      <p class="p-4">Yes, we do. With our discount policy, the more you order, the higher the discount. You can calculate your discount amount on our website. Just provide the number of images you’d like us to edit and the time frame you expect them returned.</p>
+                  </div>
+              </div>
+              <div class="mb-4 ">
+                <input type="checkbox" id="accordion-2" class="hidden peer">
+                <label for="accordion-2" class="flex justify-between items-center bg-white  p-[26px]  cursor-pointer peer-checked:bg-white font-semibold text-[22px] rounded-[10px] peer-checked:rounded-[10px_10px_0_0]">
+                    <span>Do We Offer Bulk Image Discounts?</span>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform duration-500 ease-in-out" viewBox="0 0 20 20" fill="#0F52FF">
+                        <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707A1 1 0 014.293 8.293l5-5A1 1 0 0110 3z" clip-rule="evenodd" />
+                    </svg>
+                </label>
+                <div class="content bg-white overflow-hidden max-h-0 transition-all duration-500 ease-in-out peer-checked:max-h-40">
+                    <p class="p-4">Yes, we do. With our discount policy, the more you order, the higher the discount. You can calculate your discount amount on our website. Just provide the number of images you’d like us to edit and the time frame you expect them returned.</p>
+                </div>
+            </div>
+            <div class="mb-4 ">
+              <input type="checkbox" id="accordion-3" class="hidden peer">
+              <label for="accordion-3" class="flex justify-between items-center bg-white  p-[26px]  cursor-pointer peer-checked:bg-white font-semibold text-[22px] rounded-[10px] peer-checked:rounded-[10px_10px_0_0]">
+                  <span>Do We Offer Bulk Image Discounts?</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform duration-500 ease-in-out" viewBox="0 0 20 20" fill="#0F52FF">
+                      <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707A1 1 0 014.293 8.293l5-5A1 1 0 0110 3z" clip-rule="evenodd" />
+                  </svg>
+              </label>
+              <div class="content bg-white overflow-hidden max-h-0 transition-all duration-500 ease-in-out peer-checked:max-h-40">
+                  <p class="p-4">Yes, we do. With our discount policy, the more you order, the higher the discount. You can calculate your discount amount on our website. Just provide the number of images you’d like us to edit and the time frame you expect them returned.</p>
+              </div>
+          </div>
+          <div class="mb-4 ">
+            <input type="checkbox" id="accordion-4" class="hidden peer">
+            <label for="accordion-4" class="flex justify-between items-center bg-white  p-[26px]  cursor-pointer peer-checked:bg-white font-semibold text-[22px] rounded-[10px] peer-checked:rounded-[10px_10px_0_0]">
+                <span>Do We Offer Bulk Image Discounts?</span>
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform duration-500 ease-in-out" viewBox="0 0 20 20" fill="#0F52FF">
+                    <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707A1 1 0 014.293 8.293l5-5A1 1 0 0110 3z" clip-rule="evenodd" />
+                </svg>
+            </label>
+            <div class="content bg-white overflow-hidden max-h-0 transition-all duration-500 ease-in-out peer-checked:max-h-40">
+                <p class="p-4">Yes, we do. With our discount policy, the more you order, the higher the discount. You can calculate your discount amount on our website. Just provide the number of images you’d like us to edit and the time frame you expect them returned.</p>
+            </div>
+        </div>
+        <div class="mb-4 ">
+          <input type="checkbox" id="accordion-5" class="hidden peer">
+          <label for="accordion-5" class="flex justify-between items-center bg-white  p-[26px]  cursor-pointer peer-checked:bg-white font-semibold text-[22px] rounded-[10px] peer-checked:rounded-[10px_10px_0_0]">
+              <span>Do We Offer Bulk Image Discounts?</span>
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform duration-500 ease-in-out" viewBox="0 0 20 20" fill="#0F52FF">
+                  <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707A1 1 0 014.293 8.293l5-5A1 1 0 0110 3z" clip-rule="evenodd" />
+              </svg>
+          </label>
+          <div class="content bg-white overflow-hidden max-h-0 transition-all duration-500 ease-in-out peer-checked:max-h-40">
+              <p class="p-4">Yes, we do. With our discount policy, the more you order, the higher the discount. You can calculate your discount amount on our website. Just provide the number of images you’d like us to edit and the time frame you expect them returned.</p>
+          </div>
+      </div>
+      <div class="mb-4 ">
+        <input type="checkbox" id="accordion-6" class="hidden peer">
+        <label for="accordion-6" class="flex justify-between items-center bg-white  p-[26px]  cursor-pointer peer-checked:bg-white font-semibold text-[22px] rounded-[10px] peer-checked:rounded-[10px_10px_0_0]">
+            <span>Do We Offer Bulk Image Discounts?</span>
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform duration-500 ease-in-out" viewBox="0 0 20 20" fill="#0F52FF">
+                <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707A1 1 0 014.293 8.293l5-5A1 1 0 0110 3z" clip-rule="evenodd" />
+            </svg>
+        </label>
+        <div class="content bg-white overflow-hidden max-h-0 transition-all duration-500 ease-in-out peer-checked:max-h-40">
+            <p class="p-4">Yes, we do. With our discount policy, the more you order, the higher the discount. You can calculate your discount amount on our website. Just provide the number of images you’d like us to edit and the time frame you expect them returned.</p>
+        </div>
+    </div>
+    <div class="mb-4 ">
+      <input type="checkbox" id="accordion-7" class="hidden peer">
+      <label for="accordion-7" class="flex justify-between items-center bg-white  p-[26px]  cursor-pointer peer-checked:bg-white font-semibold text-[22px] rounded-[10px] peer-checked:rounded-[10px_10px_0_0]">
+          <span>Do We Offer Bulk Image Discounts?</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform duration-500 ease-in-out" viewBox="0 0 20 20" fill="#0F52FF">
+              <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707A1 1 0 014.293 8.293l5-5A1 1 0 0110 3z" clip-rule="evenodd" />
+          </svg>
+      </label>
+      <div class="content bg-white overflow-hidden max-h-0 transition-all duration-500 ease-in-out peer-checked:max-h-40">
+          <p class="p-4">Yes, we do. With our discount policy, the more you order, the higher the discount. You can calculate your discount amount on our website. Just provide the number of images you’d like us to edit and the time frame you expect them returned.</p>
+      </div>
+  </div>
+  <div class="mb-4 ">
+    <input type="checkbox" id="accordion-8" class="hidden peer">
+    <label for="accordion-8" class="flex justify-between items-center bg-white  p-[26px]  cursor-pointer peer-checked:bg-white font-semibold text-[22px] rounded-[10px] peer-checked:rounded-[10px_10px_0_0]">
+        <span>Do We Offer Bulk Image Discounts?</span>
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 transition-transform duration-500 ease-in-out" viewBox="0 0 20 20" fill="#0F52FF">
+            <path fill-rule="evenodd" d="M10 3a1 1 0 01.707.293l5 5a1 1 0 01-1.414 1.414L10 5.414 5.707 9.707A1 1 0 014.293 8.293l5-5A1 1 0 0110 3z" clip-rule="evenodd" />
+        </svg>
+    </label>
+    <div class="content bg-white overflow-hidden max-h-0 transition-all duration-500 ease-in-out peer-checked:max-h-40">
+        <p class="p-4">Yes, we do. With our discount policy, the more you order, the higher the discount. You can calculate your discount amount on our website. Just provide the number of images you’d like us to edit and the time frame you expect them returned.</p>
+    </div>
+</div>
+              
+          </div>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer_top pt-[118px] pb-[88px]">
+      <div class="container flex gap-5 justify-between items-center">
+        <div class="flex-1">
+          <img src="./assets/Logo.png" alt="logo" class="max-w-[280px]">
+          <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis mattis lacus. Sed facilisis neque quis ipsum laoreet varius. Vivamus risus purus, malesuada nec tellus et, condimentum egestas dui.</p>
+          <div class="newsletter flex flex-col gap-[15px]">
+            <p class="font-medium text-[18px] mt-[86px]">Subscribe to our newsletter</p>
+            <form action="#" class="flex gap-[20px]">
+              <input type="text" class="p-[10px] bg-transparent border  border-[#d4d4d4] rounded-lg w-full" placeholder="Enter your email here">
+              <button class="text-white py-[10px] px-[17px] bg-[#0F52FF] rounded-lg font-semibold ">Subscribe</button>
+            </form>
+            <div class="soical_share flex gap-[19px]">
+              <img src="./assets/social_1.png" alt="social icon" class="social_icon">
+              <img src="./assets/social_2.png" alt="social icon" class="social_icon">
+              <img src="./assets/social_3.png" alt="social icon" class="social_icon">
+              <img src="./assets/social_4.png" alt="social icon" class="social_icon">
+              <img src="./assets/social_6.png" alt="social icon" class="social_icon">
+              <img src="./assets/social_7.png" alt="social icon" class="social_icon">
+            </div>
+          </div>
+        </div>
+        
+        <div class="flex-1 flex justify-between">
+          <div class="">
+            <h5 class="">Important Links</h5>
+            <div class="menu flex flex-col">
+              <a class="" href="">Home</a>
+              <a class="" href="">Pricing</a>
+              <a class="" href="">About Us</a>
+              <a class="" href="">Contact Us</a>
+              <a class="" href="">Portfolio</a>
+              
+            </div>
+          </div>
+          
+          <div class="">
+            <h5 class="">Important Links</h5>
+            <div class="menu flex flex-col">
+              <a class="" href="">Home</a>
+              <a class="" href="">Pricing</a>
+              <a class="" href="">About Us</a>
+              <a class="" href="">Contact Us</a>
+              <a class="" href="">Portfolio</a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+</body>
+</html>

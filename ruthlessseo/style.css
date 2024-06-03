@@ -405,6 +405,7 @@ background-size: contain;
    background-repeat: no-repeat;
    background-position: top;
    background-size: contain;
+   background-color: #000;
 }
 
 .pricing__top_heading {
