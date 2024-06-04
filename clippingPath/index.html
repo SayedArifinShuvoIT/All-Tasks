@@ -28,16 +28,15 @@
             color: #0F52FF;
           }
           .card_border {
-            border: 2px solid #0F52FF;
-            border-image-slice: 1;
-            border-image-source: linear-gradient(to bottom,#0F52FF 0% ,#0f53ff00 100%);
-            border-radius: 0 0 10px 10px;
+
+            height: 100%;
+            border-radius: 10px;
             position: relative;
             box-shadow: 0 0 45px #00000026;
             transition: all .5s ease;
             
           }
-          .card_border::after {
+          .card_wrapper::after {
             content: "";
             position: absolute;
             width: 100%;
@@ -87,6 +86,13 @@
         .social_icon:hover {
           transform: scale(1.2);
         }
+        .card_wrapper {
+          flex:1;
+  position: relative;
+  padding: 2px; 
+  border-radius: 10px;
+  background: linear-gradient(to bottom,#0F52FF 0% ,#0f53ff00 100%);;
+}
       </style>
 </head>
 <body>
@@ -129,53 +135,61 @@
     <div class="container">
 <div class="py-[88px] flex flex-col justify-center items-center gap-[50px]">
 <h2 class="text-[48px] font-bold">Our <span class="blue">Success!</span></h2>
-<div class="flex justify-center  gap-10">
-  <div class="Success_card text-center p-[28px] pb-[21px] card_border hover:bg-[#0F52FF] hover:text-white">
-    <h1 class=" card_heading font-bold text-[48px] text-[#0F52FF]">5K+</h1>
-    <h3 class="relative font-semibold text-[20px] pb-[20px]">
-      Images Daily
-      <span class="absolute bb w-[45px] h-[3px] bg-[#0F52FF] rounded-2xl bottom-[10px] left-[40%]"></span>
-      <span class="absolute bb_1 w-[5px] h-[3px] bg-white rounded-2xl bottom-[10px] left-[42%]"></span>
-
-    </h3>
-    <p class="text-4 leading-[24px]">We deliver over 5,000 stunning images every day.</p>
+<div class="flex justify-center gap-10">
+  <div class="card_wrapper">
+    <div class="Success_card bg-white text-center p-[28px] pb-[21px] card_border hover:bg-[#0F52FF] hover:text-white">
+      <h1 class="card_heading font-bold text-[48px] text-[#0F52FF]">5K+</h1>
+      <h3 class="relative font-semibold text-[20px] pb-[20px]">
+        Images Daily
+        <span class="absolute bb w-[45px] h-[3px] bg-[#0F52FF] rounded-2xl bottom-[10px] left-[40%]"></span>
+        <span class="absolute bb_1 w-[5px] h-[3px] bg-white rounded-2xl bottom-[10px] left-[42%]"></span>
+      </h3>
+      <p class="text-4 leading-[24px]">We deliver over 5,000 stunning images every day.</p>
+    </div>
   </div>
-  <div class="Success_card text-center p-[28px] pb-[21px] card_border hover:bg-[#0F52FF] hover:text-white">
-    <h1 class=" card_heading font-bold text-[48px] text-[#0F52FF]">100%</h1>
-    <h3 class="relative font-semibold text-[20px] pb-[20px]">
-      Quality
-      <span class="absolute bb w-[45px] h-[3px] bg-[#0F52FF] rounded-2xl bottom-[10px] left-[40%]"></span>
-      <span class="absolute bb_1 w-[5px] h-[3px] bg-white rounded-2xl bottom-[10px] left-[42%]"></span>
-
-    </h3>
-    <p class="text-4 leading-[24px]">We guarantee 100% high-quality services.</p>
+  
+  <div class="card_wrapper">
+    <div class="Success_card bg-white text-center p-[28px] pb-[21px] card_border hover:bg-[#0F52FF] hover:text-white">
+      <h1 class="card_heading font-bold text-[48px] text-[#0F52FF]">100%</h1>
+      <h3 class="relative font-semibold text-[20px] pb-[20px]">
+        Quality
+        <span class="absolute bb w-[45px] h-[3px] bg-[#0F52FF] rounded-2xl bottom-[10px] left-[40%]"></span>
+        <span class="absolute bb_1 w-[5px] h-[3px] bg-white rounded-2xl bottom-[10px] left-[42%]"></span>
+      </h3>
+      <p class="text-4 leading-[24px]">We guarantee 100% high-quality services.</p>
+    </div>
   </div>
-  <div class="Success_card text-center p-[28px] pb-[21px] card_border hover:bg-[#0F52FF] hover:text-white">
-    <h1 class=" card_heading font-bold text-[48px] text-[#0F52FF]">10K+</h1>
-    <h3 class="relative font-semibold text-[20px] pb-[20px]">
-      Happy Clients
-      <span class="absolute bb w-[45px] h-[3px] bg-[#0F52FF] rounded-2xl bottom-[10px] left-[40%]"></span>
-      <span class="absolute bb_1 w-[5px] h-[3px] bg-white rounded-2xl bottom-[10px] left-[42%]"></span>
-
-    </h3>
-    <p class="text-4 leading-[24px]">Join our community of over 10,000 satisfied customers worldwide.</p>
+  
+  <div class="card_wrapper">
+    <div class="Success_card bg-white text-center p-[28px] pb-[21px] card_border hover:bg-[#0F52FF] hover:text-white">
+      <h1 class="card_heading font-bold text-[48px] text-[#0F52FF]">10K+</h1>
+      <h3 class="relative font-semibold text-[20px] pb-[20px]">
+        Happy Clients
+        <span class="absolute bb w-[45px] h-[3px] bg-[#0F52FF] rounded-2xl bottom-[10px] left-[40%]"></span>
+        <span class="absolute bb_1 w-[5px] h-[3px] bg-white rounded-2xl bottom-[10px] left-[42%]"></span>
+      </h3>
+      <p class="text-4 leading-[24px]">Join our community of over 10,000 satisfied customers worldwide.</p>
+    </div>
   </div>
-  <div class="Success_card text-center p-[28px] pb-[21px] card_border hover:bg-[#0F52FF] hover:text-white">
-    <h1 class=" card_heading font-bold text-[48px] text-[#0F52FF]">6M+</h1>
-    <h3 class="relative font-semibold text-[20px] pb-[20px]">
-      Files Completed
-      <span class="absolute bb w-[45px] h-[3px] bg-[#0F52FF] rounded-2xl bottom-[10px] left-[40%]"></span>
-      <span class="absolute bb_1 w-[5px] h-[3px] bg-white rounded-2xl bottom-[10px] left-[42%]"></span>
-
-    </h3>
-    <p class="text-4 leading-[24px]">We’ve expertly processed over 6 million files and counting!</p>
+  
+  <div class="card_wrapper">
+    <div class="Success_card bg-white text-center p-[28px] pb-[21px] card_border hover:bg-[#0F52FF] hover:text-white">
+      <h1 class="card_heading font-bold text-[48px] text-[#0F52FF]">6M+</h1>
+      <h3 class="relative font-semibold text-[20px] pb-[20px]">
+        Files Completed
+        <span class="absolute bb w-[45px] h-[3px] bg-[#0F52FF] rounded-2xl bottom-[10px] left-[40%]"></span>
+        <span class="absolute bb_1 w-[5px] h-[3px] bg-white rounded-2xl bottom-[10px] left-[42%]"></span>
+      </h3>
+      <p class="text-4 leading-[24px]">We’ve expertly processed over 6 million files and counting!</p>
+    </div>
   </div>
 </div>
+
 </div>
     </div>
 
 
-    <div style="background-image: url(./assets/expartise_bg.png);" class="bg-cover bg-no-repeat">
+    <div style="background-image: url(./assets/expartise_bg.png);" class="bg-cover bg-no-repeat bg-center">
      <div class="container">
       <div class="py-[88px] flex flex-col justify-center items-center gap-[50px]">
         <div class="text-center">
@@ -263,20 +277,20 @@
           <div class="flex flex-col gap-[30px]">
             <p class="">Enhance your images with our professional photo retouching services. Our team of experienced editors is dedicated to bringing out the best in every photo, ensuring your visuals captivate and impress.</p>
             <p class="">Whether you need subtle adjustments or major enhancements, we cater to all your retouching needs with precision and care.Our retouching services cover a wide range of requirements, from color correction and blemish removal to advanced editing techniques that make your images stand out. </p>
-            <div class="flex flex-wrap gap-[20px] justify-between">
-              <div class="desc_list flex gap-[12px]">
+            <div class="flex flex-wrap gap-[18px]  justify-start">
+              <div class="desc_list flex gap-[5px] items-center w-[48.3%]">
                 <img src="./assets/tikmark.png" alt="" class="">
-                <p class="text-[18px] font-semibold">Color Correction</p>
+                <p class="text-[18px]  font-semibold">Color Correction</p>
               </div>
-              <div class="desc_list flex gap-[12px]">
+              <div class="desc_list flex items-center gap-[5px] w-[48.3%]">
                 <img src="./assets/tikmark.png" alt="" class="">
                 <p class="text-[18px] font-semibold">Blemish Removal</p>
               </div>
-              <div class="desc_list flex gap-[12px]">
-                <img src="./assets/tikmark.png" alt="" class="">
+              <div class="desc_list flex items-center gap-[5px] w-[48.3%]">
+                <img src="./assets/tikmark.png" alt="" class="w-[30px]">
                 <p class="text-[18px] font-semibold">Background Enhancement</p>
               </div>
-              <div class="desc_list flex gap-[12px]">
+              <div class="desc_list flex items-center gap-[5px] w-[48.3%]">
                 <img src="./assets/tikmark.png" alt="" class="">
                 <p class="text-[18px] font-semibold">Advanced Editing</p>
               </div>
@@ -298,22 +312,22 @@
           <div class="flex flex-col gap-[30px]">
             <p class="">Our team of skilled editors utilizes advanced tools and techniques to create flawless image outlines, ensuring that your products and subjects are perfectly isolated from their backgrounds. </p>
             <p class="">We understand the importance of high-quality visuals in today's competitive market. That’s why we are committed to delivering top-tier clipping path services that enhance your brand's image and drive customer engagement. From single images to bulk orders, we handle projects of all sizes with the same level of dedication and expertise.</p>
-            <div class="flex flex-wrap gap-[20px] justify-between">
-              <div class="desc_list flex gap-[12px]">
+            <div class="flex flex-wrap gap-[18px]  justify-start">
+              <div class="desc_list flex gap-[5px] items-center w-[48.3%]">
                 <img src="./assets/tikmark.png" alt="" class="">
-                <p class="text-[18px] font-semibold">Precision and Accuracy</p>
+                <p class="text-[18px]  font-semibold">Color Correction</p>
               </div>
-              <div class="desc_list flex gap-[12px]">
+              <div class="desc_list flex items-center gap-[5px] w-[48.3%]">
                 <img src="./assets/tikmark.png" alt="" class="">
-                <p class="text-[18px] font-semibold">Fast Turnaround</p>
+                <p class="text-[18px] font-semibold">Blemish Removal</p>
               </div>
-              <div class="desc_list flex gap-[12px]">
-                <img src="./assets/tikmark.png" alt="" class="">
-                <p class="text-[18px] font-semibold">Cost-Effective Solutions</p>
+              <div class="desc_list flex items-center gap-[5px] w-[48.3%]">
+                <img src="./assets/tikmark.png" alt="" class="w-[30px]">
+                <p class="text-[18px] font-semibold">Background Enhancement</p>
               </div>
-              <div class="desc_list flex gap-[12px]">
+              <div class="desc_list flex items-center gap-[5px] w-[48.3%]">
                 <img src="./assets/tikmark.png" alt="" class="">
-                <p class="text-[18px] font-semibold">Scalable Service</p>
+                <p class="text-[18px] font-semibold">Advanced Editing</p>
               </div>
               <button class="py-[20px] px-[30px] bg-[#0F52FF] text-[18px] text-white font-semibold rounded-[10px] m-0">Get a Quote →</button>
             </div>
@@ -334,25 +348,25 @@
             <p class="">Our team of skilled editors utilizes advanced tools and techniques to create flawless image outlines, ensuring that your products and subjects are perfectly isolated from their backgrounds.</p>
             <p class="">
               We understand the importance of high-quality visuals in today's competitive market. That’s why we are committed to delivering top-tier clipping path services that enhance your brand's image and drive customer engagement. From single images to bulk orders, we handle projects of all sizes with the same level of dedication and expertise. </p>
-            <div class="flex flex-wrap gap-[20px] justify-between">
-              <div class="desc_list flex gap-[12px]">
-                <img src="./assets/tikmark.png" alt="" class="">
-                <p class="text-[18px] font-semibold">Color Correction</p>
+              <div class="flex flex-wrap gap-[18px]  justify-start">
+                <div class="desc_list flex gap-[5px] items-center w-[48.3%]">
+                  <img src="./assets/tikmark.png" alt="" class="">
+                  <p class="text-[18px]  font-semibold">Color Correction</p>
+                </div>
+                <div class="desc_list flex items-center gap-[5px] w-[48.3%]">
+                  <img src="./assets/tikmark.png" alt="" class="">
+                  <p class="text-[18px] font-semibold">Blemish Removal</p>
+                </div>
+                <div class="desc_list flex items-center gap-[5px] w-[48.3%]">
+                  <img src="./assets/tikmark.png" alt="" class="w-[30px]">
+                  <p class="text-[18px] font-semibold">Background Enhancement</p>
+                </div>
+                <div class="desc_list flex items-center gap-[5px] w-[48.3%]">
+                  <img src="./assets/tikmark.png" alt="" class="">
+                  <p class="text-[18px] font-semibold">Advanced Editing</p>
+                </div>
+                <button class="py-[20px] px-[30px] bg-[#0F52FF] text-[18px] text-white font-semibold rounded-[10px] m-0">Get a Quote →</button>
               </div>
-              <div class="desc_list flex gap-[12px]">
-                <img src="./assets/tikmark.png" alt="" class="">
-                <p class="text-[18px] font-semibold">Blemish Removal</p>
-              </div>
-              <div class="desc_list flex gap-[12px]">
-                <img src="./assets/tikmark.png" alt="" class="">
-                <p class="text-[18px] font-semibold">Background Enhancement</p>
-              </div>
-              <div class="desc_list flex gap-[12px]">
-                <img src="./assets/tikmark.png" alt="" class="">
-                <p class="text-[18px] font-semibold">Advanced Editing</p>
-              </div>
-              <button class="py-[20px] px-[30px] bg-[#0F52FF] text-[18px] text-white font-semibold rounded-[10px] m-0">Get a Quote →</button>
-            </div>
           </div>
         </div>
         <div class="flex-1">
@@ -370,25 +384,25 @@
             <p class="">Enhance your images with our professional photo retouching services. Our team of experienced editors is dedicated to bringing out the best in every photo, ensuring your visuals captivate and impress. </p>
             <p class="">
               Whether you need subtle adjustments or major enhancements, we cater to all your retouching needs with precision and care.Our retouching services cover a wide range of requirements, from color correction and blemish removal to advanced editing techniques that make your images stand out. </p>
-            <div class="flex flex-wrap gap-[20px] justify-between">
-              <div class="desc_list flex gap-[12px]">
-                <img src="./assets/tikmark.png" alt="" class="">
-                <p class="text-[18px] font-semibold">Precision and Accuracy</p>
+              <div class="flex flex-wrap gap-[18px]  justify-start">
+                <div class="desc_list flex gap-[5px] items-center w-[48.3%]">
+                  <img src="./assets/tikmark.png" alt="" class="">
+                  <p class="text-[18px]  font-semibold">Color Correction</p>
+                </div>
+                <div class="desc_list flex items-center gap-[5px] w-[48.3%]">
+                  <img src="./assets/tikmark.png" alt="" class="">
+                  <p class="text-[18px] font-semibold">Blemish Removal</p>
+                </div>
+                <div class="desc_list flex items-center gap-[5px] w-[48.3%]">
+                  <img src="./assets/tikmark.png" alt="" class="w-[30px]">
+                  <p class="text-[18px] font-semibold">Background Enhancement</p>
+                </div>
+                <div class="desc_list flex items-center gap-[5px] w-[48.3%]">
+                  <img src="./assets/tikmark.png" alt="" class="">
+                  <p class="text-[18px] font-semibold">Advanced Editing</p>
+                </div>
+                <button class="py-[20px] px-[30px] bg-[#0F52FF] text-[18px] text-white font-semibold rounded-[10px] m-0">Get a Quote →</button>
               </div>
-              <div class="desc_list flex gap-[12px]">
-                <img src="./assets/tikmark.png" alt="" class="">
-                <p class="text-[18px] font-semibold">Fast Turnaround</p>
-              </div>
-              <div class="desc_list flex gap-[12px]">
-                <img src="./assets/tikmark.png" alt="" class="">
-                <p class="text-[18px] font-semibold">Cost-Effective Solutions</p>
-              </div>
-              <div class="desc_list flex gap-[12px]">
-                <img src="./assets/tikmark.png" alt="" class="">
-                <p class="text-[18px] font-semibold">Scalable Service</p>
-              </div>
-              <button class="py-[20px] px-[30px] bg-[#0F52FF] text-[18px] text-white font-semibold rounded-[10px] m-0">Get a Quote →</button>
-            </div>
           </div>
         </div>
         <div class="flex-1">
@@ -440,22 +454,22 @@
           <div class="flex flex-col gap-[30px]">
             <p class="">Enhance your images with our professional photo retouching services. Our team of experienced editors is dedicated to bringing out the best in every photo, ensuring your visuals captivate and impress.  </p>
             <p class="">Whether you need subtle adjustments or major enhancements, we cater to all your retouching needs with precision and care.Our retouching services cover a wide range of requirements, from color correction and blemish removal to advanced editing techniques that make your images stand out. </p>
-            <div class="flex flex-wrap gap-[20px] justify-between">
-              <div class="desc_list flex gap-[12px]">
+            <div class="flex flex-wrap gap-[18px]  justify-start">
+              <div class="desc_list flex gap-[5px] items-center w-[48.3%]">
                 <img src="./assets/tikmark.png" alt="" class="">
-                <p class="text-[18px] font-semibold">Precision and Accuracy</p>
+                <p class="text-[18px]  font-semibold">Color Correction</p>
               </div>
-              <div class="desc_list flex gap-[12px]">
+              <div class="desc_list flex items-center gap-[5px] w-[48.3%]">
                 <img src="./assets/tikmark.png" alt="" class="">
-                <p class="text-[18px] font-semibold">Fast Turnaround</p>
+                <p class="text-[18px] font-semibold">Blemish Removal</p>
               </div>
-              <div class="desc_list flex gap-[12px]">
-                <img src="./assets/tikmark.png" alt="" class="">
-                <p class="text-[18px] font-semibold">Cost-Effective Solutions</p>
+              <div class="desc_list flex items-center gap-[5px] w-[48.3%]">
+                <img src="./assets/tikmark.png" alt="" class="w-[30px]">
+                <p class="text-[18px] font-semibold">Background Enhancement</p>
               </div>
-              <div class="desc_list flex gap-[12px]">
+              <div class="desc_list flex items-center gap-[5px] w-[48.3%]">
                 <img src="./assets/tikmark.png" alt="" class="">
-                <p class="text-[18px] font-semibold">Scalable Service</p>
+                <p class="text-[18px] font-semibold">Advanced Editing</p>
               </div>
               <button class="py-[20px] px-[30px] bg-[#0F52FF] text-[18px] text-white font-semibold rounded-[10px] m-0">Get a Quote →</button>
             </div>
@@ -559,15 +573,22 @@
     </div>
     <div class="bg-[#F8F6FA] py-[118px] ">
      <div class="relative">
+      <div class="Portfolio absolute rounded-[20px_0_0_20px] bg-white w-[60%] h-full right-0 pb-[100px]">
+        <div class="relative w-full h-full">
+          <img src="./assets/portfolio_dot.png" alt="dot style" class="absolute bottom-[-45px] left-[50px]">
+
+        </div>
+      </div>
       <div class="container ">
         <h1 class="font-bold text-[48px] "><span class="blue">Success</span> Stories</h1>
-        <div class=" flex items-center gap-[50px]">
-          <div class="flex-1">
+        <div class=" flex items-center justify-center gap-[50px] ">
+          
+          <div class="flex-1 z-10">
             
-            <img src="./assets/portfolio_img.png" alt="" class="">
+            <img src="./assets/portfolio_img.png" alt="" class="relative bottom-10 ">
           </div>
-          <div class="flex-1 ">
-            <span class="Portfolio absolute"></span>
+          <div class="flex-1 pb-[100px]  z-10">
+            
             <h2 class="font-medium text-[30px]">Products Images help us improve our sells by 30%</h2>
             <p class="leading-[28px] mt-[34px] mb-[48px]">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur quis mattis lacus. Sed facilisis neque quis ipsum laoreet varius. Vivamus risus purus, malesuada nec tellus et, condimentum egestas dui. Etiam interdum eu tortor feugiat sollicitudin. Sed quis ligula eget justo sollicitudin aliquam. </p>
   
@@ -608,20 +629,20 @@
     <div class="bg-[#F8F6FA] py-[118px]">
       <div class="container">
         <div class="contact_form flex flex-col justify-center items-center gap-[118px] ">
-          <h1 class="font-bold text-[48px] text-center">Ready to <span class="blue">transform your images</span> with our top-notch clipping path services?</h1>
-        <form action="#" class="flex flex-col gap-5">
+          <h1 class="font-bold text-[48px] text-center max-w-[980px]">Ready to <span class="blue">transform your images</span> with our top-notch clipping path services?</h1>
+        <form action="#" class="flex flex-col gap-5 w-full max-w-[760px]">
           <div class="contact_up flex gap-5">
-            <input type="text" class="p-[6px] bg-transparent border  border-[#d4d4d4] rounded-lg" placeholder="Your Name*">
-            <input type="text" class="p-[6px] bg-transparent border  border-[#d4d4d4] rounded-lg" placeholder="Your Email*">
-            <input type="text" class="p-[6px] bg-transparent border  border-[#d4d4d4] rounded-lg" placeholder="Your Phone No.">
+            <input type="text" class="flex-1 p-[6px] h-[50px] bg-transparent border border-2  border-[#d4d4d4] rounded-lg" placeholder="Your Name*">
+            <input type="text" class="flex-1 p-[6px] h-[50px] bg-transparent border border-2  border-[#d4d4d4] rounded-lg" placeholder="Your Email*">
+            <input type="text" class="flex-1 p-[6px] h-[50px] bg-transparent border border-2  border-[#d4d4d4] rounded-lg" placeholder="Your Phone No.">
       
           </div>
           <div class="contact_up flex gap-5">
-            <textarea type="text" class="p-[6px] text-[#979797] w-full min-h-[420px] bg-transparent border  border-[#d4d4d4] rounded-lg active:text-black">Your Message*</textarea>
+            <textarea type="text" class="p-[6px] border-2 text-[#979797] w-full h-[420px] bg-transparent border  border-[#d4d4d4] rounded-lg active:text-black">Your Message*</textarea>
            
       
           </div>
-          <button class="py-5 bg-[#0F52FF] rounded-lg text-white font-semibold text-[18px]" type="submit">Submit →</button>
+          <button class="py-5 shadow-md shadow-[#0F52FF50] bg-[#0F52FF] rounded-lg text-white font-semibold text-[18px]" type="submit">Submit →</button>
         </form>
         <div class="faq_section flex flex-col justify-center items-center">
           <h2 class="text-[48px] font-bold mb-[70px]">Got Questions? </h2>
@@ -781,5 +802,30 @@
       </div>
 
     </div>
+    <button onclick="backToTop()" id="back-to-top-btn" title="Go to top" class="fixed bottom-20 right-0 bg-[#0047FF] rotate-[-90deg] text-white p-[10px] text-[14px]  rounded hover:bg-blue-600 hidden">
+      Back To Top →
+    </button>
+    <script>
+      var backToTopButton = document.getElementById("back-to-top-btn");
+
+
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+    backToTopButton.style.display = "block";
+  } else {
+    backToTopButton.style.display = "none";
+  }
+}
+
+
+function backToTop() {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+}
+    </script>
 </body>
 </html>
